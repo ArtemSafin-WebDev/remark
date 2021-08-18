@@ -1,0 +1,19 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 130%;
+    color: var(--primary-color);
+    padding: 1.7rem 3.4rem;
+    background: #ffffff;
+    border-radius: 4rem;
+    min-width: 20rem;
+    font-family: var(--geometria);
+    &:link,
+    &:visited {
+        color: var(--primary-color);
+    }
+}
