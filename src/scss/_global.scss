@@ -14,7 +14,7 @@
     --bg-color: #F2F7FB;
     --text-color: #0a2742;
     --geometria: 'Geometria', sans-serif;
-    --leto: 'Lato', sans-serif;
+    --lato: 'Lato', sans-serif;
     --google-sans: 'Google Sans', sans-serif;
 }
 
@@ -32,9 +32,10 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    font-family: sans-serif;
+    font-family: var(--lato);
     color: var(--text-color);
     background-color: var(--bg-color);
+    
 }
 
 main {

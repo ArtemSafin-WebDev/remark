@@ -5,5 +5,57 @@
 
 .slider-arrows__btn {
     margin-right: 1rem;
-    
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .2s, opacity .2s;
+    background-color: white;
+
+
+    &.swiper-button-disabled {
+        opacity: 0.5;
+        cursor: default;
+    }
+
+    svg {
+        width: 0.9rem;
+        height: 1.8rem;
+        fill: var(--primary-color);
+        transition: fill .2s;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+
+
+   
+
+
+    .no-touch &:not(.swiper-button-disabled):hover,
+    .touch &:not(.swiper-button-disabled):active {
+        background-color: var(--primary-color);
+        svg {
+            fill: white;
+        }
+    }
+
+
+    &--green {
+        background-color: var(--primary-color);
+        svg {
+            fill: white;
+        }
+
+        .no-touch &:not(.swiper-button-disabled):hover,
+        .touch &:not(.swiper-button-disabled):active {
+            background-color: white;
+            svg {
+                fill: var(--primary-color);
+            }
+        }
+    }
 }
