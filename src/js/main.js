@@ -15,6 +15,7 @@ import cases from './cases';
 import partners from './partners';
 import pressCenter from './pressCenter';
 import reviews from './reviews';
+import introSlider from './introSlider';
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -34,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
     partners();
     pressCenter();
     reviews();
+    introSlider();
 });
 
 window.addEventListener('load', function() {

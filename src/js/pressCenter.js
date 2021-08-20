@@ -14,6 +14,7 @@ export default function pressCenter() {
             watchOverflow: true,
             spaceBetween: 40,
             slidesPerView: 1,
+            speed: 700,
             init: false,
             on: {
                 init: swiper => {
