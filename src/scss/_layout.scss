@@ -12,6 +12,7 @@
 .inner-container {
     width: 100%;
     max-width: var(--inner-container-width, 0);
+    margin: 0 auto;
 }
 
 .page-content {

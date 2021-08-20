@@ -3,7 +3,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: var(--primary-color);
+    background: linear-gradient(112.66deg, #009959 0%, #19A540 100%), #395166;
+    border-radius: 3rem;
     color: white;
     padding: 1.5rem 3rem;
     font-weight: bold;
@@ -13,5 +14,10 @@
     &:link,
     &:visited {
         color: white;
+    }
+
+    .no-touch &:hover,
+    .touch &:active {
+        
     }
 }

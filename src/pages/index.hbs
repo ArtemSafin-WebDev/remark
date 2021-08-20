@@ -1,7 +1,7 @@
 {{#extend "layout"}}
 {{#content "main"}}
 
-<section class="intro-slider">
+{{!-- <section class="intro-slider">
     <div class="container">
         <div class="intro__main-slider">
             <div class="swiper-container">
@@ -219,7 +219,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 
 
 
@@ -264,20 +264,108 @@
                         <img data-src="img/catalog/4.png" alt="" class="lazyload catalog__card-image">
                     </a>
                 </li>
+                <li class="catalog__list-item">
+                    <a href="#" class="catalog__card">
+                        <h4 class="catalog__card-title">
+                            Винотека
+                        </h4>
+                        <img data-src="img/catalog/5.jpg" alt="" class="lazyload catalog__card-image">
+                    </a>
+                </li>
+                <li class="catalog__list-item">
+                    <a href="#" class="catalog__card">
+                        <h4 class="catalog__card-title">
+                            Ежедневники
+                            и изделия для планирования
+                        </h4>
+                        <img data-src="img/catalog/6.jpg" alt="" class="lazyload catalog__card-image">
+                    </a>
+                </li>
+                <li class="catalog__list-item">
+                    <a href="#" class="catalog__card">
+                        <h4 class="catalog__card-title">
+                            Зонты
+                        </h4>
+                        <img data-src="img/catalog/7.jpg" alt="" class="lazyload catalog__card-image">
+                    </a>
+                </li>
+                <li class="catalog__list-item">
+                    <a href="#" class="catalog__card">
+                        <h4 class="catalog__card-title">
+                            Наборы
+                        </h4>
+                        <img data-src="img/catalog/8.jpg" alt="" class="lazyload catalog__card-image">
+                    </a>
+                </li>
+                <li class="catalog__list-item">
+                    <a href="#" class="catalog__card">
+                        <h4 class="catalog__card-title">
+                            Наградная продукция
+                        </h4>
+                        <img data-src="img/catalog/9.jpg" alt="" class="lazyload catalog__card-image">
+                    </a>
+                </li>
+                <li class="catalog__list-item">
+                    <a href="#" class="catalog__card">
+                        <h4 class="catalog__card-title">
+                            Настольные принадлежности
+                        </h4>
+                        <img data-src="img/catalog/10.jpg" alt="" class="lazyload catalog__card-image">
+                    </a>
+                </li>
+                <li class="catalog__list-item">
+                    <a href="#" class="catalog__card">
+                        <h4 class="catalog__card-title">
+                            Новогодняя коллекция
+                        </h4>
+                        <img data-src="img/catalog/11.jpg" alt="" class="lazyload catalog__card-image">
+                    </a>
+                </li>
+                <li class="catalog__list-item">
+                    <a href="#" class="catalog__card">
+                        <h4 class="catalog__card-title">
+                            Одежда
+                            и аксессуары
+                        </h4>
+                        <img data-src="img/catalog/12.jpg" alt="" class="lazyload catalog__card-image">
+                    </a>
+                </li>
+                <li class="catalog__list-item">
+                    <a href="#" class="catalog__card">
+                        <h4 class="catalog__card-title">
+                            Персональные аксессуары
+                        </h4>
+                        <img data-src="img/catalog/13.jpg" alt="" class="lazyload catalog__card-image">
+                    </a>
+                </li>
+
+                <li class="catalog__list-item catalog__list-item--wide">
+                    <a href="#" class="catalog__all-card">
+                        <div class="catalog__all-card-content">
+                            <h4 class="catalog__all-card-title">
+                                Смотреть полный каталог
+                            </h4>
+                            <div class="btn catalog__all-card-btn">
+                                Подробнее
+                            </div>
+                        </div>
+
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
 </section>
 
 
-<section class="cases">
+<section class="cases js-cases">
     <div class="container">
         <div class="inner-container">
             <div class="cases__top-row">
                 <h2 class="section-heading cases__heading">
                     Подборки и кейсы
                 </h2>
-                <div class="slider-arrows">
+                <div class="slider-arrows cases__slider-arrows">
                     <button class="slider-arrows__btn slider-arrows__btn--green slider-arrows__btn--prev">
                         <svg width="14" height="14" aria-hidden="true" class="icon-arrow-left">
                             <use xlink:href="#arrow-left"></use>
@@ -300,7 +388,7 @@
                                 </div>
                                 <h4 class="cases__slider-card-title cases__slider-card-title--white">
                                     Подборка
-                                    на 23 февраля
+                                    на&nbsp;23&nbsp;февраля
                                 </h4>
                                 <div class="btn cases__slider-card-btn">
                                     Подробнее
@@ -314,7 +402,7 @@
                                 </div>
                                 <h4 class="cases__slider-card-title">
                                     Подборка
-                                    на 8 марта
+                                    на&nbsp;8&nbsp;марта
                                 </h4>
                                 <div class="btn cases__slider-card-btn">
                                     Подробнее
@@ -328,7 +416,7 @@
                                 </div>
                                 <h4 class="cases__slider-card-title cases__slider-card-title--white">
                                     Подборка
-                                    на Новый год
+                                    на&nbsp;Новый год
                                 </h4>
                                 <div class="btn cases__slider-card-btn">
                                     Подробнее
@@ -342,7 +430,63 @@
                                 </div>
                                 <h4 class="cases__slider-card-title">
                                     Подборка
-                                    на 14 февраля
+                                    на&nbsp;14&nbsp;февраля
+                                </h4>
+                                <div class="btn cases__slider-card-btn">
+                                    Подробнее
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="cases__slider-card">
+                                <div class="cases__slider-card-bg">
+                                    <img src="img/cases/1.jpg" alt="" class="cases__slider-card-bg-image">
+                                </div>
+                                <h4 class="cases__slider-card-title cases__slider-card-title--white">
+                                    Подборка
+                                    на&nbsp;23&nbsp;февраля
+                                </h4>
+                                <div class="btn cases__slider-card-btn">
+                                    Подробнее
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="cases__slider-card">
+                                <div class="cases__slider-card-bg">
+                                    <img src="img/cases/2.jpg" alt="" class="cases__slider-card-bg-image">
+                                </div>
+                                <h4 class="cases__slider-card-title">
+                                    Подборка
+                                    на&nbsp;8&nbsp;марта
+                                </h4>
+                                <div class="btn cases__slider-card-btn">
+                                    Подробнее
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="cases__slider-card">
+                                <div class="cases__slider-card-bg">
+                                    <img src="img/cases/3.jpg" alt="" class="cases__slider-card-bg-image">
+                                </div>
+                                <h4 class="cases__slider-card-title cases__slider-card-title--white">
+                                    Подборка
+                                    на&nbsp;Новый год
+                                </h4>
+                                <div class="btn cases__slider-card-btn">
+                                    Подробнее
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="cases__slider-card">
+                                <div class="cases__slider-card-bg">
+                                    <img src="img/cases/4.jpg" alt="" class="cases__slider-card-bg-image">
+                                </div>
+                                <h4 class="cases__slider-card-title">
+                                    Подборка
+                                    на&nbsp;14&nbsp;февраля
                                 </h4>
                                 <div class="btn cases__slider-card-btn">
                                     Подробнее
@@ -357,7 +501,7 @@
     </div>
 </section>
 
-
+{{!--
 <section class="reviews">
     <div class="container">
         <div class="inner-container">
@@ -366,18 +510,18 @@
             </h2>
         </div>
     </div>
-</section>
+</section> --}}
 
 
 
-<section class="partners">
+<section class="partners js-partners">
     <div class="container">
         <div class="inner-container">
             <div class="partners__top-row">
                 <h2 class="section-heading partners__heading">
                     Работаем с крупнейшими компаниями
                 </h2>
-                <div class="slider-arrows">
+                <div class="slider-arrows partners__slider-arrows">
                     <button class="slider-arrows__btn slider-arrows__btn--green slider-arrows__btn--prev">
                         <svg width="14" height="14" aria-hidden="true" class="icon-arrow-left">
                             <use xlink:href="#arrow-left"></use>
@@ -395,27 +539,190 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <a href="#" class="partners__slider-card">
-                                <img src="img/companies/merlion.svg" alt="" class="partners__slider-card-image">
+                                <div class="partners__slider-card-image-container">
+                                    <img data-src="img/companies/merlion.svg" alt="" class="lazyload partners__slider-card-image">
+                                    <img data-src="img/companies/merlion.svg" alt="" class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
+
+
+                                </div>
+                                <h4 class="partners__slider-card-title">
+                                    Merlion
+                                </h4>
+
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="#" class="partners__slider-card">
-                                <img src="img/companies/merlion.svg" alt="" class="partners__slider-card-image">
+                                <div class="partners__slider-card-image-container">
+                                    <img data-src="img/companies/stan.png" alt="" class="lazyload partners__slider-card-image">
+                                    <img data-src="img/companies/stan.png" alt="" class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
+                                </div>
+                                <h4 class="partners__slider-card-title">
+                                    Stan
+                                </h4>
+
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="#" class="partners__slider-card">
-                                <img src="img/companies/merlion.svg" alt="" class="partners__slider-card-image">
+                                <div class="partners__slider-card-image-container">
+                                    <img data-src="img/companies/oasis.svg" alt="" class="lazyload partners__slider-card-image">
+                                    <img data-src="img/companies/oasis.svg" alt="" class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
+                                </div>
+                                <h4 class="partners__slider-card-title">
+                                    Oasis
+                                </h4>
+
+                            </a>
+                        </div>
+                
+                        <div class="swiper-slide">
+                            <a href="#" class="partners__slider-card">
+                                <div class="partners__slider-card-image-container">
+                                    <img data-src="img/companies/happy-gifts.svg" alt="" class="lazyload partners__slider-card-image">
+                                    <img data-src="img/companies/happy-gifts.svg" alt="" class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
+                                </div>
+                                <h4 class="partners__slider-card-title">
+                                    Happy Gifts
+                                </h4>
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="#" class="partners__slider-card">
-                                <img src="img/companies/merlion.svg" alt="" class="partners__slider-card-image">
+                                <div class="partners__slider-card-image-container">
+                                    <img data-src="img/companies/ocean.png" alt="" class="lazyload partners__slider-card-image">
+                                    <img data-src="img/companies/ocean.png" alt="" class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
+                                </div>
+                                <h4 class="partners__slider-card-title">
+                                    Океан
+                                </h4>
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="#" class="partners__slider-card">
-                                <img src="img/companies/merlion.svg" alt="" class="partners__slider-card-image">
+                                <div class="partners__slider-card-image-container">
+                                    <img data-src="img/companies/project111.svg" alt="" class="lazyload  partners__slider-card-image">
+                                    <img data-src="img/companies/project111.svg" alt="" class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
+                                </div>
+                                <h4 class="partners__slider-card-title">
+                                    Проект 111
+                                </h4>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="partners__slider-card">
+                                <div class="partners__slider-card-image-container">
+                                    <img data-src="img/companies/portobello.svg" alt="" class="lazyload partners__slider-card-image">
+                                    <img data-src="img/companies/portobello.svg" alt="" class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
+                                </div>
+                                <h4 class="partners__slider-card-title">
+                                    Portobello
+                                </h4>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="partners__slider-card">
+                                <div class="partners__slider-card-image-container">
+                                    <img data-src="img/companies/xindao.svg" alt="" class="lazyload partners__slider-card-image">
+                                    <img data-src="img/companies/xindao.svg" alt="" class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
+                                </div>
+                                <h4 class="partners__slider-card-title">
+                                    Xindao
+                                </h4>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="partners__slider-card">
+                                <div class="partners__slider-card-image-container">
+                                    <img data-src="img/companies/merlion.svg" alt="" class="lazyload partners__slider-card-image">
+                                    <img data-src="img/companies/merlion.svg" alt="" class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
+
+
+                                </div>
+                                <h4 class="partners__slider-card-title">
+                                    Merlion
+                                </h4>
+
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="partners__slider-card">
+                                <div class="partners__slider-card-image-container">
+                                    <img data-src="img/companies/stan.png" alt="" class="lazyload partners__slider-card-image">
+                                    <img data-src="img/companies/stan.png" alt="" class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
+                                </div>
+                                <h4 class="partners__slider-card-title">
+                                    Stan
+                                </h4>
+
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="partners__slider-card">
+                                <div class="partners__slider-card-image-container">
+                                    <img data-src="img/companies/oasis.svg" alt="" class="lazyload partners__slider-card-image">
+                                    <img data-src="img/companies/oasis.svg" alt="" class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
+                                </div>
+                                <h4 class="partners__slider-card-title">
+                                    Oasis
+                                </h4>
+
+                            </a>
+                        </div>
+                
+                        <div class="swiper-slide">
+                            <a href="#" class="partners__slider-card">
+                                <div class="partners__slider-card-image-container">
+                                    <img data-src="img/companies/happy-gifts.svg" alt="" class="lazyload partners__slider-card-image">
+                                    <img data-src="img/companies/happy-gifts.svg" alt="" class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
+                                </div>
+                                <h4 class="partners__slider-card-title">
+                                    Happy Gifts
+                                </h4>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="partners__slider-card">
+                                <div class="partners__slider-card-image-container">
+                                    <img data-src="img/companies/ocean.png" alt="" class="lazyload partners__slider-card-image">
+                                    <img data-src="img/companies/ocean.png" alt="" class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
+                                </div>
+                                <h4 class="partners__slider-card-title">
+                                    Океан
+                                </h4>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="partners__slider-card">
+                                <div class="partners__slider-card-image-container">
+                                    <img data-src="img/companies/project111.svg" alt="" class="lazyload  partners__slider-card-image">
+                                    <img data-src="img/companies/project111.svg" alt="" class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
+                                </div>
+                                <h4 class="partners__slider-card-title">
+                                    Проект 111
+                                </h4>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="partners__slider-card">
+                                <div class="partners__slider-card-image-container">
+                                    <img data-src="img/companies/portobello.svg" alt="" class="lazyload partners__slider-card-image">
+                                    <img data-src="img/companies/portobello.svg" alt="" class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
+                                </div>
+                                <h4 class="partners__slider-card-title">
+                                    Portobello
+                                </h4>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="partners__slider-card">
+                                <div class="partners__slider-card-image-container">
+                                    <img data-src="img/companies/xindao.svg" alt="" class="lazyload partners__slider-card-image">
+                                    <img data-src="img/companies/xindao.svg" alt="" class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
+                                </div>
+                                <h4 class="partners__slider-card-title">
+                                    Xindao
+                                </h4>
                             </a>
                         </div>
                     </div>

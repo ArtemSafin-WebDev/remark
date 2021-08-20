@@ -11,6 +11,8 @@ import mediaPlayer from './mediaPlayer';
 import datepicker from './datepicker';
 import modals from './modals';
 import accordions from './accordions';
+import cases from './cases';
+import partners from './partners';
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -26,6 +28,8 @@ document.addEventListener('DOMContentLoaded', function() {
     mediaPlayer();
     modals();
     datepicker();
+    cases();
+    partners();
 });
 
 window.addEventListener('load', function() {
