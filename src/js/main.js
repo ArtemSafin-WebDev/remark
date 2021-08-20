@@ -16,6 +16,7 @@ import partners from './partners';
 import pressCenter from './pressCenter';
 import reviews from './reviews';
 import introSlider from './introSlider';
+import fancybox from './fancybox';
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -36,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
     pressCenter();
     reviews();
     introSlider();
+    fancybox();
 });
 
 window.addEventListener('load', function() {

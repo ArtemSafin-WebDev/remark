@@ -347,5 +347,13 @@
         height: 100%;
         width: 100%;
         fill: var(--primary-color);
+        transition: fill .2s;
+    }
+
+    .no-touch &:hover,
+    .touch &:active {
+        svg {
+            fill: white;
+        }
     }
 }

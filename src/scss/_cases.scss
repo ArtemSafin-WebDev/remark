@@ -38,6 +38,14 @@
     overflow: hidden;
     backface-visibility: hidden;
     transform: translateZ(0);
+
+    .no-touch &:hover,
+    .touch &:active {
+        .cases__slider-card-btn {
+            background-color: var(--primary-color);
+            color: white;
+        }
+    }
     
 }
 

@@ -10,6 +10,7 @@
     --max-container-width: 149.5rem;
     --inner-container-width: 118rem;
     --content-padding: 6rem;
+  
     --primary-color: #009959;
     --primary-color-hover: rgb(14, 129, 81);
     --bg-color: #F2F7FB;
@@ -17,13 +18,25 @@
     --geometria: 'Geometria', sans-serif;
     --lato: lato, sans-serif;
     --google-sans: 'Google Sans', sans-serif;
+
+    @include breakpoint(tablet) {
+        --content-padding: 4rem;
+    }
 }
 
 html {
     box-sizing: border-box;
-    font-size: 10px;
+   
     -webkit-text-size-adjust: 100%;
+    font-size: clamp(5px, 0.54vw, 18px);
+    // font-size: 10px;
 
+    @include breakpoint(tablet) {
+        font-size: 8px;
+    }
+    @include breakpoint(small-tablet) {
+        font-size: 6px;
+    }
     @include noHighlight();
 }
 

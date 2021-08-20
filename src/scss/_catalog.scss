@@ -41,7 +41,7 @@
     }
 
     .no-touch &:hover {
-        
+        box-shadow: -1.5rem -1.5rem 2.9rem #ffffff, 1.5rem 1.5rem 2.8rem rgba(0, 153, 89, 0.4); 
     }
 
     @supports (aspect-ratio: 1 / 1) {
@@ -94,6 +94,14 @@
     &:link,
     &:visited {
         color: white;
+    }
+
+    .no-touch &:hover,
+    .touch &:active {
+        .catalog__all-card-btn {
+            background-color: white;
+            color: var(--primary-color);
+        }
     }
 }
 
