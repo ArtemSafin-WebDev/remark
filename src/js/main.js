@@ -13,6 +13,8 @@ import modals from './modals';
 import accordions from './accordions';
 import cases from './cases';
 import partners from './partners';
+import pressCenter from './pressCenter';
+import reviews from './reviews';
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -30,6 +32,8 @@ document.addEventListener('DOMContentLoaded', function() {
     datepicker();
     cases();
     partners();
+    pressCenter();
+    reviews();
 });
 
 window.addEventListener('load', function() {

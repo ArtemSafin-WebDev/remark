@@ -1,7 +1,7 @@
 {{#extend "layout"}}
 {{#content "main"}}
 
-{{!-- <section class="intro-slider">
+<section class="intro-slider">
     <div class="container">
         <div class="intro__main-slider">
             <div class="swiper-container">
@@ -146,15 +146,18 @@
         <div class="inner-container">
             <div class="press-center__top-row">
                 <h2 class="section-heading press-center__heading">
-                    Каталог продукции
+                    Пресс-центр
                 </h2>
                 <div class="press-center__controls">
-                    <button class="press-center__control">
+                    <button class="press-center__control active">
                         Новости
                     </button>
                     <button class="press-center__control">
                         Статьи
                     </button>
+                    <div class="press-center__controls-indicator">
+
+                    </div>
                 </div>
             </div>
             <div class="press-center__slider">
@@ -214,12 +217,66 @@
                                 </a>
                             </div>
                         </div>
+                        <div class="swiper-slide">
+                            <div class="press-center__slider-group">
+                                <a href="#" class="press-center__slider-card">
+                                    <div class="press-center__slider-card-image-container">
+                                        <img data-src="img/press-center.jpg" alt=""
+                                            class="lazyload press-center__slider-card-image">
+                                    </div>
+                                    <div class="press-center__slider-card-content">
+                                        <h4 class="press-center__slider-card-title">
+                                            Разрабатываем единую систему корпоративных сувениров
+                                        </h4>
+                                        <div class="press-center__slider-card-text">
+                                            <p>
+                                                Помогают ли Ваши деловые подарки
+                                                и промо-сувениры решить маркетинговые задачи компании?
+                                            </p>
+                                        </div>
+                                        <div class="press-center__slider-card-bottom-row">
+                                            <div class="press-center__slider-card-more">
+                                                Подробнее
+                                            </div>
+                                            <div class="press-center__slider-card-date">
+                                                22.04.2021
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="press-center__slider-card">
+                                    <div class="press-center__slider-card-image-container">
+                                        <img data-src="img/press-center.jpg" alt=""
+                                            class="lazyload press-center__slider-card-image">
+                                    </div>
+                                    <div class="press-center__slider-card-content">
+                                        <h4 class="press-center__slider-card-title">
+                                            Разрабатываем единую систему корпоративных сувениров
+                                        </h4>
+                                        <div class="press-center__slider-card-text">
+                                            <p>
+                                                Помогают ли Ваши деловые подарки
+                                                и промо-сувениры решить маркетинговые задачи компании?
+                                            </p>
+                                        </div>
+                                        <div class="press-center__slider-card-bottom-row">
+                                            <div class="press-center__slider-card-more">
+                                                Подробнее
+                                            </div>
+                                            <div class="press-center__slider-card-date">
+                                                22.04.2021
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</section> --}}
+</section>
 
 
 
@@ -501,27 +558,97 @@
     </div>
 </section>
 
-{{!--
-<section class="reviews">
+
+<section class="reviews js-reviews">
     <div class="container">
         <div class="inner-container">
             <h2 class="section-heading reviews__heading">
                 Отзывы наших клиентов
             </h2>
-        </div>
-    </div>
-</section> --}}
+            <div class="reviews__slider">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="reviews__slider-card">
+                                <a href="#" class="reviews__slider-card-video-container">
+                                    <img src="img/video-preview.jpg" alt="" class="reviews__slider-card-video-preview">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-play">
+                                        <use xlink:href="#play"></use>
+                                    </svg>
+                                </a>
+                                <div class="reviews__slider-card-content">
+                                    <h4 class="reviews__slider-card-title">
+                                        Александр
+                                    </h4>
+                                    <div class="reviews__slider-card-text">
+                                        <p>
+                                            Всем советую , клиентоориентиртванные ребята. Приехали, товар в наличии был
+                                            как и говорили по телефону , очень большой выбор. 5 звезды ставлю
+                                        </p>
+                                    </div>
+                                    <div class="reviews__slider-card-rating">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-star">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-star">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-star">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-star">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-star">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__slider-card">
+                                <a href="#" class="reviews__slider-card-video-container">
+                                    <img src="img/video-preview.jpg" alt="" class="reviews__slider-card-video-preview">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-play">
+                                        <use xlink:href="#play"></use>
+                                    </svg>
+                                </a>
+                                <div class="reviews__slider-card-content">
+                                    <h4 class="reviews__slider-card-title">
+                                        Александр
+                                    </h4>
+                                    <div class="reviews__slider-card-text">
+                                        <p>
+                                            Всем советую , клиентоориентиртванные ребята. Приехали, товар в наличии был
+                                            как и говорили по телефону , очень большой выбор. 5 звезды ставлю
+                                        </p>
+                                    </div>
+                                    <div class="reviews__slider-card-rating">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-star">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-star">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-star">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-star">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-star">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
+                    </div>
+                </div>
 
-
-<section class="partners js-partners">
-    <div class="container">
-        <div class="inner-container">
-            <div class="partners__top-row">
-                <h2 class="section-heading partners__heading">
-                    Работаем с крупнейшими компаниями
-                </h2>
-                <div class="slider-arrows partners__slider-arrows">
+                <div class="slider-arrows reviews__slider-arrows">
                     <button class="slider-arrows__btn slider-arrows__btn--green slider-arrows__btn--prev">
                         <svg width="14" height="14" aria-hidden="true" class="icon-arrow-left">
                             <use xlink:href="#arrow-left"></use>
@@ -534,196 +661,258 @@
                     </button>
                 </div>
             </div>
-            <div class="partners__slider">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <a href="#" class="partners__slider-card">
-                                <div class="partners__slider-card-image-container">
-                                    <img data-src="img/companies/merlion.svg" alt="" class="lazyload partners__slider-card-image">
-                                    <img data-src="img/companies/merlion.svg" alt="" class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
+        </div>
+    </div>
+</section>
 
 
-                                </div>
-                                <h4 class="partners__slider-card-title">
-                                    Merlion
-                                </h4>
 
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="partners__slider-card">
-                                <div class="partners__slider-card-image-container">
-                                    <img data-src="img/companies/stan.png" alt="" class="lazyload partners__slider-card-image">
-                                    <img data-src="img/companies/stan.png" alt="" class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
-                                </div>
-                                <h4 class="partners__slider-card-title">
-                                    Stan
-                                </h4>
-
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="partners__slider-card">
-                                <div class="partners__slider-card-image-container">
-                                    <img data-src="img/companies/oasis.svg" alt="" class="lazyload partners__slider-card-image">
-                                    <img data-src="img/companies/oasis.svg" alt="" class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
-                                </div>
-                                <h4 class="partners__slider-card-title">
-                                    Oasis
-                                </h4>
-
-                            </a>
-                        </div>
-                
-                        <div class="swiper-slide">
-                            <a href="#" class="partners__slider-card">
-                                <div class="partners__slider-card-image-container">
-                                    <img data-src="img/companies/happy-gifts.svg" alt="" class="lazyload partners__slider-card-image">
-                                    <img data-src="img/companies/happy-gifts.svg" alt="" class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
-                                </div>
-                                <h4 class="partners__slider-card-title">
-                                    Happy Gifts
-                                </h4>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="partners__slider-card">
-                                <div class="partners__slider-card-image-container">
-                                    <img data-src="img/companies/ocean.png" alt="" class="lazyload partners__slider-card-image">
-                                    <img data-src="img/companies/ocean.png" alt="" class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
-                                </div>
-                                <h4 class="partners__slider-card-title">
-                                    Океан
-                                </h4>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="partners__slider-card">
-                                <div class="partners__slider-card-image-container">
-                                    <img data-src="img/companies/project111.svg" alt="" class="lazyload  partners__slider-card-image">
-                                    <img data-src="img/companies/project111.svg" alt="" class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
-                                </div>
-                                <h4 class="partners__slider-card-title">
-                                    Проект 111
-                                </h4>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="partners__slider-card">
-                                <div class="partners__slider-card-image-container">
-                                    <img data-src="img/companies/portobello.svg" alt="" class="lazyload partners__slider-card-image">
-                                    <img data-src="img/companies/portobello.svg" alt="" class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
-                                </div>
-                                <h4 class="partners__slider-card-title">
-                                    Portobello
-                                </h4>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="partners__slider-card">
-                                <div class="partners__slider-card-image-container">
-                                    <img data-src="img/companies/xindao.svg" alt="" class="lazyload partners__slider-card-image">
-                                    <img data-src="img/companies/xindao.svg" alt="" class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
-                                </div>
-                                <h4 class="partners__slider-card-title">
-                                    Xindao
-                                </h4>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="partners__slider-card">
-                                <div class="partners__slider-card-image-container">
-                                    <img data-src="img/companies/merlion.svg" alt="" class="lazyload partners__slider-card-image">
-                                    <img data-src="img/companies/merlion.svg" alt="" class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
+<section class="partners js-partners">
+    <div class="container">
+        <div class="inner-container">
+            <div class="partners__content">
 
 
-                                </div>
-                                <h4 class="partners__slider-card-title">
-                                    Merlion
-                                </h4>
+                <div class="partners__top-row">
+                    <h2 class="section-heading partners__heading">
+                        Работаем с крупнейшими компаниями
+                    </h2>
+                    <div class="slider-arrows partners__slider-arrows">
+                        <button class="slider-arrows__btn slider-arrows__btn--green slider-arrows__btn--prev">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-arrow-left">
+                                <use xlink:href="#arrow-left"></use>
+                            </svg>
+                        </button>
+                        <button class="slider-arrows__btn slider-arrows__btn--green slider-arrows__btn--next">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-arrow-right">
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="partners__slider">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" class="partners__slider-card">
+                                    <div class="partners__slider-card-image-container">
+                                        <img data-src="img/companies/merlion.svg" alt=""
+                                            class="lazyload partners__slider-card-image">
+                                        <img data-src="img/companies/merlion.svg" alt=""
+                                            class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
 
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="partners__slider-card">
-                                <div class="partners__slider-card-image-container">
-                                    <img data-src="img/companies/stan.png" alt="" class="lazyload partners__slider-card-image">
-                                    <img data-src="img/companies/stan.png" alt="" class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
-                                </div>
-                                <h4 class="partners__slider-card-title">
-                                    Stan
-                                </h4>
 
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="partners__slider-card">
-                                <div class="partners__slider-card-image-container">
-                                    <img data-src="img/companies/oasis.svg" alt="" class="lazyload partners__slider-card-image">
-                                    <img data-src="img/companies/oasis.svg" alt="" class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
-                                </div>
-                                <h4 class="partners__slider-card-title">
-                                    Oasis
-                                </h4>
+                                    </div>
+                                    <h4 class="partners__slider-card-title">
+                                        Merlion
+                                    </h4>
 
-                            </a>
-                        </div>
-                
-                        <div class="swiper-slide">
-                            <a href="#" class="partners__slider-card">
-                                <div class="partners__slider-card-image-container">
-                                    <img data-src="img/companies/happy-gifts.svg" alt="" class="lazyload partners__slider-card-image">
-                                    <img data-src="img/companies/happy-gifts.svg" alt="" class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
-                                </div>
-                                <h4 class="partners__slider-card-title">
-                                    Happy Gifts
-                                </h4>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="partners__slider-card">
-                                <div class="partners__slider-card-image-container">
-                                    <img data-src="img/companies/ocean.png" alt="" class="lazyload partners__slider-card-image">
-                                    <img data-src="img/companies/ocean.png" alt="" class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
-                                </div>
-                                <h4 class="partners__slider-card-title">
-                                    Океан
-                                </h4>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="partners__slider-card">
-                                <div class="partners__slider-card-image-container">
-                                    <img data-src="img/companies/project111.svg" alt="" class="lazyload  partners__slider-card-image">
-                                    <img data-src="img/companies/project111.svg" alt="" class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
-                                </div>
-                                <h4 class="partners__slider-card-title">
-                                    Проект 111
-                                </h4>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="partners__slider-card">
-                                <div class="partners__slider-card-image-container">
-                                    <img data-src="img/companies/portobello.svg" alt="" class="lazyload partners__slider-card-image">
-                                    <img data-src="img/companies/portobello.svg" alt="" class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
-                                </div>
-                                <h4 class="partners__slider-card-title">
-                                    Portobello
-                                </h4>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="partners__slider-card">
-                                <div class="partners__slider-card-image-container">
-                                    <img data-src="img/companies/xindao.svg" alt="" class="lazyload partners__slider-card-image">
-                                    <img data-src="img/companies/xindao.svg" alt="" class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
-                                </div>
-                                <h4 class="partners__slider-card-title">
-                                    Xindao
-                                </h4>
-                            </a>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="partners__slider-card">
+                                    <div class="partners__slider-card-image-container">
+                                        <img data-src="img/companies/stan.png" alt=""
+                                            class="lazyload partners__slider-card-image">
+                                        <img data-src="img/companies/stan.png" alt=""
+                                            class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
+                                    </div>
+                                    <h4 class="partners__slider-card-title">
+                                        Stan
+                                    </h4>
+
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="partners__slider-card">
+                                    <div class="partners__slider-card-image-container">
+                                        <img data-src="img/companies/oasis.svg" alt=""
+                                            class="lazyload partners__slider-card-image">
+                                        <img data-src="img/companies/oasis.svg" alt=""
+                                            class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
+                                    </div>
+                                    <h4 class="partners__slider-card-title">
+                                        Oasis
+                                    </h4>
+
+                                </a>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <a href="#" class="partners__slider-card">
+                                    <div class="partners__slider-card-image-container">
+                                        <img data-src="img/companies/happy-gifts.svg" alt=""
+                                            class="lazyload partners__slider-card-image">
+                                        <img data-src="img/companies/happy-gifts.svg" alt=""
+                                            class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
+                                    </div>
+                                    <h4 class="partners__slider-card-title">
+                                        Happy Gifts
+                                    </h4>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="partners__slider-card">
+                                    <div class="partners__slider-card-image-container">
+                                        <img data-src="img/companies/ocean.png" alt=""
+                                            class="lazyload partners__slider-card-image">
+                                        <img data-src="img/companies/ocean.png" alt=""
+                                            class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
+                                    </div>
+                                    <h4 class="partners__slider-card-title">
+                                        Океан
+                                    </h4>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="partners__slider-card">
+                                    <div class="partners__slider-card-image-container">
+                                        <img data-src="img/companies/project111.svg" alt=""
+                                            class="lazyload  partners__slider-card-image">
+                                        <img data-src="img/companies/project111.svg" alt=""
+                                            class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
+                                    </div>
+                                    <h4 class="partners__slider-card-title">
+                                        Проект 111
+                                    </h4>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="partners__slider-card">
+                                    <div class="partners__slider-card-image-container">
+                                        <img data-src="img/companies/portobello.svg" alt=""
+                                            class="lazyload partners__slider-card-image">
+                                        <img data-src="img/companies/portobello.svg" alt=""
+                                            class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
+                                    </div>
+                                    <h4 class="partners__slider-card-title">
+                                        Portobello
+                                    </h4>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="partners__slider-card">
+                                    <div class="partners__slider-card-image-container">
+                                        <img data-src="img/companies/xindao.svg" alt=""
+                                            class="lazyload partners__slider-card-image">
+                                        <img data-src="img/companies/xindao.svg" alt=""
+                                            class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
+                                    </div>
+                                    <h4 class="partners__slider-card-title">
+                                        Xindao
+                                    </h4>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="partners__slider-card">
+                                    <div class="partners__slider-card-image-container">
+                                        <img data-src="img/companies/merlion.svg" alt=""
+                                            class="lazyload partners__slider-card-image">
+                                        <img data-src="img/companies/merlion.svg" alt=""
+                                            class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
+
+
+                                    </div>
+                                    <h4 class="partners__slider-card-title">
+                                        Merlion
+                                    </h4>
+
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="partners__slider-card">
+                                    <div class="partners__slider-card-image-container">
+                                        <img data-src="img/companies/stan.png" alt=""
+                                            class="lazyload partners__slider-card-image">
+                                        <img data-src="img/companies/stan.png" alt=""
+                                            class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
+                                    </div>
+                                    <h4 class="partners__slider-card-title">
+                                        Stan
+                                    </h4>
+
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="partners__slider-card">
+                                    <div class="partners__slider-card-image-container">
+                                        <img data-src="img/companies/oasis.svg" alt=""
+                                            class="lazyload partners__slider-card-image">
+                                        <img data-src="img/companies/oasis.svg" alt=""
+                                            class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
+                                    </div>
+                                    <h4 class="partners__slider-card-title">
+                                        Oasis
+                                    </h4>
+
+                                </a>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <a href="#" class="partners__slider-card">
+                                    <div class="partners__slider-card-image-container">
+                                        <img data-src="img/companies/happy-gifts.svg" alt=""
+                                            class="lazyload partners__slider-card-image">
+                                        <img data-src="img/companies/happy-gifts.svg" alt=""
+                                            class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
+                                    </div>
+                                    <h4 class="partners__slider-card-title">
+                                        Happy Gifts
+                                    </h4>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="partners__slider-card">
+                                    <div class="partners__slider-card-image-container">
+                                        <img data-src="img/companies/ocean.png" alt=""
+                                            class="lazyload partners__slider-card-image">
+                                        <img data-src="img/companies/ocean.png" alt=""
+                                            class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
+                                    </div>
+                                    <h4 class="partners__slider-card-title">
+                                        Океан
+                                    </h4>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="partners__slider-card">
+                                    <div class="partners__slider-card-image-container">
+                                        <img data-src="img/companies/project111.svg" alt=""
+                                            class="lazyload  partners__slider-card-image">
+                                        <img data-src="img/companies/project111.svg" alt=""
+                                            class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
+                                    </div>
+                                    <h4 class="partners__slider-card-title">
+                                        Проект 111
+                                    </h4>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="partners__slider-card">
+                                    <div class="partners__slider-card-image-container">
+                                        <img data-src="img/companies/portobello.svg" alt=""
+                                            class="lazyload partners__slider-card-image">
+                                        <img data-src="img/companies/portobello.svg" alt=""
+                                            class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
+                                    </div>
+                                    <h4 class="partners__slider-card-title">
+                                        Portobello
+                                    </h4>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="partners__slider-card">
+                                    <div class="partners__slider-card-image-container">
+                                        <img data-src="img/companies/xindao.svg" alt=""
+                                            class="lazyload partners__slider-card-image">
+                                        <img data-src="img/companies/xindao.svg" alt=""
+                                            class="lazyload partners__slider-card-image partners__slider-card-image--monochrome">
+                                    </div>
+                                    <h4 class="partners__slider-card-title">
+                                        Xindao
+                                    </h4>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
