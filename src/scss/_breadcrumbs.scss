@@ -1,0 +1,45 @@
+.breadcrumbs {
+    padding-top: 1.8rem;
+    margin-bottom: 2.5rem;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 1.8rem;
+    }
+}
+
+.breadcrumbs__links {
+    color: rgba(#0a2742, 0.6);
+    display: flex;
+    align-items: baseline;
+
+    svg {
+        fill: currentColor;
+        margin: 0 .8rem;
+        flex-shrink: 0;
+        width: 1.2rem;
+        height: 0.8rem;
+    }
+}
+
+.breadcrumbs__link {
+    font-size: 1.4rem;
+    line-height: 160%;
+    color: rgba(#0a2742, 0.6);
+
+    &:link,
+    &:visited {
+        color: rgba(#0a2742, 0.6);
+    }
+
+    &.active {
+        cursor: default;
+        pointer-events: none;
+    }
+
+
+    .no-touch &:not(.active):hover,
+    .touch &:not(.active):active {
+        color: var(--primary-color);
+    }
+    
+}

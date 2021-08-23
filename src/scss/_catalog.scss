@@ -79,9 +79,12 @@
 
 .catalog__card-image {
     position: absolute;
-    width: 11rem;
+    
 
-    height: auto;
+    height: 10rem;
+    max-width: 65%;
+    width: auto;
+    
     z-index: -1;
     bottom: 1.5rem;
     right: 1.5rem;
@@ -90,7 +93,7 @@
     mix-blend-mode: darken;
 
     @include breakpoint(mobile) {
-        width: 7rem;
+        height: 8rem;
     }
 }
 
@@ -180,6 +183,8 @@
     @include breakpoint(mobile) {
         min-width: auto;
         width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
 
     }
 }

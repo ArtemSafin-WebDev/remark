@@ -1,0 +1,6 @@
+.page-heading {
+    margin-bottom: 3.8rem;
+    @include breakpoint(mobile) {
+        margin-bottom: 2.5rem;
+    }
+}
