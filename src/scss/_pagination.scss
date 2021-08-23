@@ -1,0 +1,57 @@
+.pagination {
+    margin-top: 6rem;
+    @include breakpoint(mobile) {
+        margin-top: 3rem;
+    }
+}
+
+.pagination__links {
+    display: flex;
+    align-items: center;
+    
+
+    @include breakpoint(mobile) {
+        justify-content: space-between;
+    }
+}
+
+.pagination__link {
+    width: 4rem;
+    height: 4rem;
+    flex-shrink: 0;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 50%;
+    color: var(--text-color);
+    font-family: var(--geometria);
+    font-weight: 700;
+    transition: color .2s, background-color .2s;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    margin-right: 0.5rem;
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @include breakpoint(mobile) {
+        width: 3.6rem;
+        height: 3.6rem;
+        font-size: 1.4rem;
+
+    }
+    .no-touch &:hover,
+    .touch &:active,
+    &.active {
+        background-color: var(--primary-color);
+        color: white;
+
+        &:link,
+        &:visited {
+            color: white;
+        }
+    }
+}

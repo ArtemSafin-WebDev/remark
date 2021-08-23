@@ -1,0 +1,103 @@
+.news-catalog {
+    margin-bottom: 10rem;
+    @include breakpoint(mobile) {
+        margin-bottom: 5rem;
+    }
+}
+
+.news-catalog__list-item {
+    margin-bottom: 4rem;
+
+   
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.news-catalog__card {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 6rem;
+
+    @include breakpoint(mobile) {
+        grid-gap: 1.5rem;
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .no-touch &:hover,
+    .touch &:active {
+        .news-catalog__card-more {
+            border-color: transparent;
+        }
+    }
+}
+
+.news-catalog__card-image-container {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    &::before {
+        content: '';
+        display: block;
+        padding-bottom: 56.25%;
+    }
+}
+
+.news-catalog__card-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-catalog__card-title {
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 130%;
+    font-family: var(--geometria);
+    margin-bottom: 0.8rem;
+
+    @include breakpoint(mobile) {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.news-catalog__card-date {
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    margin-bottom: 3.5rem;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 1.5rem;
+        line-height: 1.3;
+
+    }
+}
+
+.news-catalog__card-text {
+    font-size: 1.4rem;
+    line-height: 160%;
+    margin-bottom: 1.5rem;
+    @include breakpoint(mobile) {
+        margin-bottom: 1rem;
+    }
+}
+
+.news-catalog__card-more {
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    display: inline-flex;
+    align-self: flex-start;
+    color: var(--primary-color);
+    transition: color 0.2s, border-color 0.2s;
+    border-bottom: 1px solid currentColor;
+    &:link,
+    &:visited {
+        color: var(--primary-color);
+    }
+}
