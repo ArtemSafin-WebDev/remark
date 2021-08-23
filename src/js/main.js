@@ -18,6 +18,7 @@ import reviews from './reviews';
 import introSlider from './introSlider';
 import fancybox from './fancybox';
 import menu from './menu';
+import interviewsSlider from './interviewsSlider';
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -40,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
     introSlider();
     fancybox();
     menu();
+    interviewsSlider();
 });
 
 window.addEventListener('load', function() {
