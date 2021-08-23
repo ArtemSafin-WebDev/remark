@@ -7,16 +7,20 @@ export default function introSlider() {
 
     elements.forEach(element => {
         const container = element.querySelector('.swiper-container');
-       
+
         const progressBullets = Array.from(element.querySelectorAll('.intro__thumbs-slider-card'));
 
-
-        const mainSlider = new Swiper(container, {
+        let options = {
             slidesPerView: 1,
-            spaceBetween: 30,
+            spaceBetween: 10,
             watchOverflow: true,
             threshold: 5,
             speed: 800,
+            breakpoints: {
+                641: {
+                    spaceBetween: 30
+                }
+            },
             navigation: {
                 nextEl: element.querySelector('.slider-arrows__btn--next'),
                 prevEl: element.querySelector('.slider-arrows__btn--prev')
@@ -32,9 +36,21 @@ export default function introSlider() {
                     autoplay(swiper.realIndex);
                 }
             }
-        });
+        };
+
+        if (window.matchMedia('(max-width: 640px)').matches) {
+            options = {
+                ...options,
+                autoplay: {
+                    delay: 5000
+                }
+            };
+        }
+
+        const mainSlider = new Swiper(container, options);
 
         function autoplay(startIndex) {
+            if (window.matchMedia('(max-width: 640px)').matches) return;
             progressBullets.forEach(bullet => {
                 gsap.set(bullet, {
                     '--slider-progress': 0
@@ -76,7 +92,7 @@ export default function introSlider() {
             bullet.addEventListener('click', event => {
                 event.preventDefault();
                 mainSlider.slideTo(bulletIndex);
-            })
-        })
+            });
+        });
     });
 }

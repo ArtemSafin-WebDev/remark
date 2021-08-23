@@ -17,6 +17,7 @@ import pressCenter from './pressCenter';
 import reviews from './reviews';
 import introSlider from './introSlider';
 import fancybox from './fancybox';
+import menu from './menu';
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -38,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
     reviews();
     introSlider();
     fancybox();
+    menu();
 });
 
 window.addEventListener('load', function() {

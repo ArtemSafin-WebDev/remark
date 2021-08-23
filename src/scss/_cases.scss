@@ -1,5 +1,8 @@
 .cases {
     margin-bottom: 8.5rem;
+    @include breakpoint(mobile) {
+        margin-bottom: 5rem;
+    }
 }
 
 .cases__top-row {
@@ -7,10 +10,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include breakpoint(mobile) {
+        margin-bottom: 3rem;
+    }
 }
 
 .cases__slider-arrows {
     margin-left: 4rem;
+    @include breakpoint(mobile) {
+        margin-left: 2.5rem;
+        display: none;
+    }
 }
 
 .cases__heading {
@@ -21,6 +31,15 @@
         width: 25%;
         display: flex;
         flex-direction: column;
+        @include breakpoint(mobile) {
+            width: 22rem;
+        }
+    }
+
+    .swiper-container {
+        @include breakpoint(mobile) {
+            overflow: visible;
+        }
     }
 }
 
@@ -38,6 +57,12 @@
     overflow: hidden;
     backface-visibility: hidden;
     transform: translateZ(0);
+
+    @include breakpoint(mobile) {
+        padding: 2.5rem;
+        min-height: 26rem;
+        border-radius: 1.5rem;
+    }
 
     .no-touch &:hover,
     .touch &:active {
@@ -74,6 +99,11 @@
     margin-bottom: 3rem;
     font-family: var(--geometria);
     color: var(--text-color);
+
+    @include breakpoint(mobile) {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
 
     &--white {
         color: white;

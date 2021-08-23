@@ -9,15 +9,22 @@ export default function partners() {
         const container = element.querySelector('.swiper-container');
 
         new Swiper(container, {
-            slidesPerView: 4,
+            slidesPerView: 2,
             slidesPerColumn: 2,
             slidesPerColumnFill: 'row',
-            spaceBetween: 50,
+            spaceBetween: 20,
             watchOverflow: true,
             threshold: 5,
             navigation: {
                 nextEl: element.querySelector('.slider-arrows__btn--next'),
                 prevEl: element.querySelector('.slider-arrows__btn--prev')
+            },
+            breakpoins: {
+                641: {
+                    
+                    slidesPerView: 4,
+                    spaceBetween: 50
+                }
             }
         });
     });

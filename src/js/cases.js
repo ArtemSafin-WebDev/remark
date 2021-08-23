@@ -9,13 +9,19 @@ export default function cases() {
         const container = element.querySelector('.swiper-container');
 
         new Swiper(container, {
-            slidesPerView: 4,
-            spaceBetween: 30,
+            slidesPerView: 'auto',
+            spaceBetween: 10,
             watchOverflow: true,
             threshold: 5,
             navigation: {
                 nextEl: element.querySelector('.slider-arrows__btn--next'),
                 prevEl: element.querySelector('.slider-arrows__btn--prev')
+            },
+            breakpoins: {
+                641: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                }
             }
         });
     });
