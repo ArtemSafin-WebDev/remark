@@ -391,6 +391,13 @@
         fill: var(--primary-color);
         transition: fill 0.2s;
     }
+
+    .no-touch &:hover,
+    .touch &:active {
+        svg {
+            fill: var(--text-color);
+        }
+    }
 }
 
 .page-header__cart {
