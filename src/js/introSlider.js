@@ -1,26 +1,22 @@
-import { Swiper, Navigation, Autoplay } from 'swiper';
+import { Swiper, Navigation, Autoplay, EffectFade } from 'swiper';
 import gsap from 'gsap';
-Swiper.use([Navigation, Autoplay]);
+Swiper.use([Navigation, Autoplay, EffectFade]);
 
 export default function introSlider() {
     const elements = Array.from(document.querySelectorAll('.js-intro-slider'));
 
     elements.forEach(element => {
         const container = element.querySelector('.swiper-container');
-
+        const isFullwidth = element.matches('.intro-slider--fullwidth');
         const progressBullets = Array.from(element.querySelectorAll('.intro__thumbs-slider-card'));
 
         let options = {
             slidesPerView: 1,
-            spaceBetween: 10,
+            spaceBetween: 30,
             watchOverflow: true,
             threshold: 5,
             speed: 800,
-            breakpoints: {
-                641: {
-                    spaceBetween: 30
-                }
-            },
+
             navigation: {
                 nextEl: element.querySelector('.slider-arrows__btn--next'),
                 prevEl: element.querySelector('.slider-arrows__btn--prev')
@@ -38,12 +34,26 @@ export default function introSlider() {
             }
         };
 
+        if (isFullwidth) {
+            options = {
+                ...options,
+                effect: 'fade',
+                speed: 500,
+                fadeEffect: {
+                    crossFade: false
+                },
+                spaceBetween: 0
+            };
+        }
+
         if (window.matchMedia('(max-width: 640px)').matches) {
             options = {
                 ...options,
+                effect: 'slide',
                 autoplay: {
                     delay: 5000
-                }
+                },
+                spaceBetween: 10
             };
         }
 
