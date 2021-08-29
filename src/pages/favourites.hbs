@@ -1,0 +1,111 @@
+{{#extend "layout"}}
+{{#content "main"}}
+
+
+<div class="breadcrumbs">
+    <div class="container">
+        <div class="inner-container">
+            <div class="breadcrumbs__links">
+                <a href="#" class="breadcrumbs__link">
+                    Главная
+                </a>
+                <svg width="14" height="14" aria-hidden="true" class="icon-breadcrumbs-arrow">
+                    <use xlink:href="#breadcrumbs-arrow"></use>
+                </svg>
+                <a href="#" class="breadcrumbs__link active">
+                    Личный кабинет
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="page-heading">
+    <div class="container">
+        <div class="inner-container">
+            <h1 class="section-heading">
+                Избранное
+            </h1>
+        </div>
+    </div>
+</div>
+
+
+
+<section class="products">
+    <div class="container">
+        <div class="inner-container">
+            <div class="products__layout">
+                <div class="products__sidebar">
+                    <div class="products__categories-block products__categories-block--nav">
+                        <ul class="products__categories-list">
+                            <li class="products__categories-list-item">
+                                <a href="#" class="products__categories-link">
+                                    История покупок
+                                </a>
+                            </li>
+                            <li class="products__categories-list-item">
+                                <a href="#" class="products__categories-link active">
+                                    Избранное
+                                </a>
+                            </li>
+                            <li class="products__categories-list-item">
+                                <a href="#" class="products__categories-link">
+                                    Выход
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="products__main">
+                    <ul class="products__catalog-list">
+
+                        {{#times 12}}
+                        <li class="products__catalog-list-item">
+                            {{> product-card-fav }}
+                        </li>
+                        {{/times}}
+                    </ul>
+                    <div class="pagination">
+                        <div class="pagination__links">
+                            <a href="#" class="pagination__link">
+                                &lt;
+                            </a>
+                            <a href="#" class="pagination__link active">
+                                1
+                            </a>
+                            <a href="#" class="pagination__link">
+                                2
+                            </a>
+                            <a href="#" class="pagination__link">
+                                3
+                            </a>
+                            <a href="#" class="pagination__link">
+                                4
+                            </a>
+                            <a href="#" class="pagination__link">
+                                _
+                            </a>
+                            <a href="#" class="pagination__link">
+                                8
+                            </a>
+                            <a href="#" class="pagination__link">
+                                &gt;
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+{{/content}}
+{{/extend}}

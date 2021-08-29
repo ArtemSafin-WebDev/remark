@@ -63,7 +63,21 @@
     .no-touch &:hover {
         background: #e8f0f8;
         color: var(--primary-color);
+
+       
     }
+
+
+    @include breakpointMF(small-tablet) {
+        .products__categories-block--nav & {
+            .no-touch &:hover,
+            &.active {
+                background: white;
+                color: var(--primary-color);
+            }
+        }
+    }
+   
 }
 
 .products__categories-list {

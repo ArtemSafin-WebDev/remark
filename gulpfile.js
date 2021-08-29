@@ -55,6 +55,13 @@ gulp.task('handlebars', function() {
                 .partials('./src/partials/components/**/*.hbs')
                 .partials('./src/partials/layouts/**/*.hbs')
                 .helpers(require('handlebars-layouts'))
+                .helpers({
+                    times: function(n, block) {
+                        var accum = '';
+                        for (var i = 0; i < n; ++i) accum += block.fn(i);
+                        return accum;
+                    }
+                })
         )
         .pipe(
             rename(function(path) {
