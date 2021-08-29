@@ -118,10 +118,19 @@
     padding-top: 5.5rem;
     border-top: 1px solid rgba(#0a2742, 0.2);
     margin-top: 6rem;
+
+    @include breakpoint(mobile) {
+        margin-top: 5rem;
+        padding-top: 3rem;
+    }
 }
 
 .cases__bottom-text {
     margin-top: 6rem;
     font-size: 1.4rem;
     line-height: 160%;
+    @include breakpoint(mobile) {
+        margin-top: 3rem;
+        font-size: 1.4rem;
+    }
 }

@@ -17,6 +17,10 @@
         }
         .product-catalog-card__face--back {
             box-shadow: 1.5rem 1.5rem 2.8rem rgba(0, 0, 0, 0.18);
+
+            @include breakpoint(mobile) {
+                box-shadow: 1rem 1rem 1.8rem rgba(0, 0, 0, 0.18);
+            }
         }
     }
 }
@@ -44,6 +48,12 @@
     position: relative;
     z-index: 1;
     transform: translateZ(0);
+
+    @include breakpoint(mobile) {
+        padding: 1.8rem;
+        border-radius: 1.5rem;
+        box-shadow: 1rem 1rem 1.8rem rgba(0, 0, 0, 0.18);
+    }
     &--back {
         position: absolute;
         left: 0;
@@ -69,6 +79,10 @@
     position: relative;
     margin-bottom: 1.8rem;
     pointer-events: none;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 1rem;
+    }
     &::before {
         content: '';
         display: block;
@@ -93,6 +107,10 @@
     margin-bottom: 0.8rem;
     text-decoration: underline;
     pointer-events: none;
+
+    @include breakpoint(mobile) {
+        font-size: 1.2rem;
+    }
 }
 
 .product-catalog-card__title-text {
@@ -120,6 +138,11 @@
     line-height: 130%;
     font-family: var(--geometria);
     margin-right: 2rem;
+
+    @include breakpoint(mobile) {
+        font-size: 1.5rem;
+        margin-right: 1rem;
+    }
 }
 
 .product-catalog-card__add-to-cart {
@@ -134,12 +157,22 @@
     background-color: var(--primary-color);
     transition: background-color 0.2s;
     pointer-events: initial;
+
+    @include breakpoint(mobile) {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
     svg {
         width: 2rem;
         height: 2rem;
         fill: white;
         display: block;
         transition: fill 0.2s;
+
+        @include breakpoint(mobile) {
+            width: 1.6rem;
+            height: 1.6rem;
+        }
     }
 
     .no-touch &:hover,
@@ -156,6 +189,11 @@
     height: 2rem;
     color: transparent;
     z-index: 50;
+
+    @include breakpoint(mobile) {
+        right: 1.8rem;
+        top: 1.8rem;
+    }
     &:link,
     &:visited {
         color: transparent;
@@ -190,12 +228,22 @@
     background: #f2f7fb;
     border-radius: 4rem;
     margin-top: auto;
+
+    @include breakpoint(mobile) {
+        padding: .8rem 1.6rem;
+        border-radius: 2rem;
+    }
 }
 .product-catalog-card__amount-btn {
     width: 1.6rem;
     height: 1.6rem;
     flex-shrink: 0;
     transition: opacity 0.2s;
+
+    @include breakpoint(mobile) {
+        width: 1.4rem;
+        height: 1.4rem;
+    }
     svg {
         display: block;
         width: 100%;
@@ -228,4 +276,8 @@
     font-family: var(--geometria);
     user-select: none;
     cursor: default;
+
+    @include breakpoint(mobile) {
+        font-size: 1.6rem;
+    }
 }
