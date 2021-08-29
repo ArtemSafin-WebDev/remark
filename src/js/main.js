@@ -19,6 +19,9 @@ import introSlider from './introSlider';
 import fancybox from './fancybox';
 import menu from './menu';
 import interviewsSlider from './interviewsSlider';
+import filtersRange from './filtersRange';
+import productCards from './productCards';
+import productTagsShowMore from './productTagsShowMore';
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -42,6 +45,9 @@ document.addEventListener('DOMContentLoaded', function() {
     fancybox();
     menu();
     interviewsSlider();
+    filtersRange();
+    productCards();
+    productTagsShowMore();
 });
 
 window.addEventListener('load', function() {
