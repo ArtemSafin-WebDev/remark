@@ -1,0 +1,79 @@
+.checkout {
+    margin-bottom: 11rem;
+    @include breakpoint(mobile) {
+        margin-bottom: 5rem;
+    }
+}
+
+.checkout__form-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-column-gap: 3rem;
+    grid-row-gap: 2rem;
+}
+
+.checkout__form-col {
+    display: flex;
+    flex-direction: column;
+
+    &--high {
+        grid-row: span 2;
+    }
+}
+
+.checkout__form-field {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout__form-field {
+    .parsley-errors-list.filled {
+        margin-top: 0.5rem;
+        font-size: 1.4rem;
+        line-height: 1.2;
+        color: var(--primary-color);
+        @include breakpoint(mobile) {
+            margin-top: 0.3rem;
+        }
+    }
+}
+
+.checkout__form-field-label {
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.checkout__form-field-required {
+    background: #eb5757;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    flex-shrink: 0;
+    align-items: flex-start;
+    margin-left: 0.2rem;
+}
+
+.checkout__form-field-input {
+    background: #ffffff;
+    border-radius: 3rem;
+    font-size: 1.4rem;
+    padding: 0 2.4rem;
+    height: 5rem;
+    @include placeholder {
+        color: rgba(#0a2742, 0.5);
+    }
+}
+
+textarea.checkout__form-field-input {
+    height: 5rem;
+    flex-grow: 1;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    resize: none;
+}
