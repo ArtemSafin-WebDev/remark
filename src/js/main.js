@@ -22,6 +22,9 @@ import interviewsSlider from './interviewsSlider';
 import filtersRange from './filtersRange';
 import productCards from './productCards';
 import productTagsShowMore from './productTagsShowMore';
+import productsSidebar from './productsSidebar';
+import gallerySlider from './gallerySlider';
+import historySlider from './historySlider';
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -48,6 +51,9 @@ document.addEventListener('DOMContentLoaded', function() {
     filtersRange();
     productCards();
     productTagsShowMore();
+    productsSidebar();
+    gallerySlider();
+    historySlider();
 });
 
 window.addEventListener('load', function() {

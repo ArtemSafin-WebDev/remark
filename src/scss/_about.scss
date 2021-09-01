@@ -1,0 +1,234 @@
+.about {
+    margin-bottom: 11rem;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 5rem;
+    }
+}
+
+.about__row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 3rem;
+    margin-bottom: 8rem;
+
+    @include breakpoint(mobile) {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        grid-gap: 3rem;
+        margin-bottom: 5rem;
+    }
+}
+
+.about__col {
+    display: flex;
+    flex-direction: column;
+
+    @include breakpointMF(small-tablet) {
+        &:first-child {
+            align-self: center;
+            padding-right: 5rem;
+        }
+    }
+}
+
+.about__text-content {
+    font-size: 1.4rem;
+    line-height: 160%;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: bold;
+        font-size: 2.4rem;
+        line-height: 130%;
+        font-family: var(--geometria);
+        margin-bottom: 2.8rem;
+
+        @include breakpoint(mobile) {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    p {
+        margin-bottom: 2rem;
+        @include breakpoint(mobile) {
+            margin-bottom: 1.5rem;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.about__image {
+    display: block;
+    height: auto;
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.about__history-slider {
+    margin-bottom: 8.5rem;
+    width: 40rem;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 6rem;
+        width: 29rem;
+    }
+
+    .swiper-container {
+        overflow: visible;
+    }
+}
+
+.about__history-slider-arrows {
+    margin-bottom: 4rem;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 3rem;
+    }
+}
+
+.about__history-slider-card {
+    position: relative;
+    padding-top: 5.5rem;
+
+  
+}
+
+.about__history-slider-card-year {
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 130%;
+    font-family: var(--geometria);
+    margin-bottom: 1rem;
+    transition: transform 0.4s;
+    transform-origin: left top;
+    user-select: none;
+
+    @include breakpoint(mobile) {
+        font-size: 1.8rem;
+    }
+
+    .swiper-slide-active & {
+        transform: scale(3) translateY(-0.5rem);
+        transition: transform 0.4s ease-out;
+
+        @include breakpoint(mobile) {
+            transform: scale(2.8) translateY(-0.5rem);
+        }
+    }
+}
+
+.about__history-slider-card-event {
+    font-size: 1.4rem;
+    line-height: 160%;
+    transition: opacity 0.4s, visibility 0.4s, transform .4s;
+    user-select: none;
+    padding-right: 2rem;
+
+    .swiper-slide-active & {
+        // opacity: 0;
+        // visibility: hidden;
+        transition: opacity 0.2s, visibility 0s linear 0.2s, transform .4s;
+        transform: translateY(4rem);
+
+        @include breakpoint(mobile) {
+            transform: translateY(2rem);
+        }
+    }
+}
+
+.about__history-slider-card-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+
+    span {
+        &:nth-child(1) {
+            height: 3rem;
+            width: 2px;
+            background-color: var(--primary-color);
+            display: none;
+        }
+        &:nth-child(2) {
+            height: 2px;
+            background-color: var(--primary-color);
+            width: 50%;
+            flex-grow: 1;
+        }
+        &:nth-child(3) {
+            height: 3rem;
+            width: 2px;
+            background-color: var(--primary-color);
+        }
+    }
+
+    .swiper-slide:first-child & {
+        span:nth-child(1) {
+            display: block;
+        }
+    }
+
+    .swiper-slide:last-child & {
+        span:nth-child(3) {
+            display: none;
+        }
+    }
+}
+
+.about__advantages-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 3rem;
+    grid-row-gap: 8rem;
+
+    @include breakpoint(mobile) {
+        grid-gap: 3rem;
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+.about__advantages-card-image-container {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    margin-bottom: 2.5rem;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 1.4rem;
+    }
+    &::before {
+        content: '';
+        display: block;
+        padding-bottom: 56.25%;
+    }
+}
+
+.about__advantages-card-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about__advantages-card-text {
+    font-size: 1.4rem;
+    line-height: 160%;
+}
