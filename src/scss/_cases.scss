@@ -3,6 +3,20 @@
     @include breakpoint(mobile) {
         margin-bottom: 5rem;
     }
+
+    &--integrated {
+        padding-top: 5.5rem;
+        border-top: 1px solid rgba(#0a2742, 0.2);
+        margin-top: 6rem;
+        margin-bottom: 0;
+    
+        @include breakpoint(mobile) {
+            margin-top: 5rem;
+            padding-top: 3rem;
+            margin-bottom: 0;
+        }
+    }
+  
 }
 
 .cases__top-row {
@@ -115,14 +129,7 @@
 }
 
 .cases__integrated {
-    padding-top: 5.5rem;
-    border-top: 1px solid rgba(#0a2742, 0.2);
-    margin-top: 6rem;
-
-    @include breakpoint(mobile) {
-        margin-top: 5rem;
-        padding-top: 3rem;
-    }
+   
 }
 
 .cases__bottom-text {

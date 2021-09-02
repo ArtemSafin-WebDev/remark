@@ -1,0 +1,329 @@
+{{#extend "layout"}}
+{{#content "main"}}
+
+
+<div class="breadcrumbs">
+    <div class="container">
+        <div class="inner-container">
+            <div class="breadcrumbs__links">
+                <a href="#" class="breadcrumbs__link">
+                    Главная
+                </a>
+                <svg width="14" height="14" aria-hidden="true" class="icon-breadcrumbs-arrow">
+                    <use xlink:href="#breadcrumbs-arrow"></use>
+                </svg>
+                <a href="#" class="breadcrumbs__link">
+                    Корзина
+                </a>
+                <svg width="14" height="14" aria-hidden="true" class="icon-breadcrumbs-arrow">
+                    <use xlink:href="#breadcrumbs-arrow"></use>
+                </svg>
+                <a href="#" class="breadcrumbs__link active">
+                    Корзина
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="page-heading">
+    <div class="container">
+        <div class="inner-container">
+            <h1 class="section-heading">
+                Корзина
+            </h1>
+        </div>
+    </div>
+</div>
+
+
+
+<section class="cart">
+    <div class="container">
+        <div class="inner-container">
+            <div class="cart__items-titles">
+                <span>
+                    Фото
+                </span>
+                <span>
+                    Название
+                </span>
+                <span>
+                    Характеристики
+                </span>
+                <span>
+                    Цена
+                </span>
+                <span>
+                    Сумма
+                </span>
+            </div>
+            <form action="/" method="POST" class="cart__form">
+                <div class="cart__items">
+                    {{#times 2}}
+                    <div class="cart__item">
+                        <div class="cart__item-image-container">
+                            <img data-src="img/product-card.jpg" alt="" class="cart__item-image lazyload">
+                        </div>
+                        <div class="cart__item-content">
+                            <h4 class="cart__item-title">
+                                Брелок со спиннером "MARINE", 5х1,5 см,металл
+                            </h4>
+                            <div class="cart__item-text">
+                                Артикул ХЭ8772/24
+                            </div>
+                        </div>
+                        <div class="cart__item-specs">
+                            Размер: 5х1,5 см<br>
+                            Материал: металл<br>
+                            Бренд: HAPPY GIFTS
+                        </div>
+                        <div class="cart__item-price-block">
+                            <div class="cart__item-price">
+                                229,00 ₽
+                            </div>
+                            <div class="cart__item-amount">
+                                <button type="button" class="cart__item-amount-btn js-amount-minus" disabled="">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-minus">
+                                        <use xlink:href="#minus"></use>
+                                    </svg>
+                                </button>
+                                <input type="text" class="cart__item-amount-input js-amount-input" readonly="" value="1"
+                                    data-min-value="1">
+                                <button type="button" class="cart__item-amount-btn js-amount-plus">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-plus">
+                                        <use xlink:href="#plus"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cart__item-total-block">
+                            <div class="cart__item-total-heading">
+                                Сумма:
+                            </div>
+                            <div class="cart__item-total">
+                                229,00 ₽
+                            </div>
+                            <a href="#" class="cart__item-remove">
+                                <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                    <use xlink:href="#cross"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    {{/times}}
+
+                </div>
+
+                <div class="cart__summary">
+                    <div class="cart__summary-total">
+                        <h4 class="cart__summary-total-heading">
+                            Итого: 2 товара на сумму
+                        </h4>
+                        <div class="cart__summary-total-amount">
+                            229,00 ₽
+                        </div>
+                    </div>
+                    <div class="cart__summary-controls">
+                        <a href="#" class="cart__clear-btn">
+                            Очистить корзину
+                        </a>
+                        <button type="submit" class="green-btn cart__submit-btn" type="submit">
+                            Оформить
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <div class="also-recommended also-recommended--integrated also-recommended--wide js-also-recommended">
+                <div class="also-recommended__top-row">
+                    <h2 class="section-heading also-recommended__heading">
+                        Рекомендуем также
+                    </h2>
+                    <div class="slider-arrows also-recommended__arrows">
+                        <button class="slider-arrows__btn slider-arrows__btn--green slider-arrows__btn--prev">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-arrow-left">
+                                <use xlink:href="#arrow-left"></use>
+                            </svg>
+                        </button>
+                        <button class="slider-arrows__btn slider-arrows__btn--green slider-arrows__btn--next">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-arrow-right">
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="also-recommended__slider">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            {{#times 8}}
+                            <div class="swiper-slide">
+                                {{> product-card }}
+                            </div>
+                            {{/times}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cases cases--integrated js-cases">
+
+
+                <div class="cases__top-row">
+                    <h2 class="section-heading cases__heading">
+                        Подборки и кейсы
+                    </h2>
+                    <div class="slider-arrows cases__slider-arrows">
+                        <button class="slider-arrows__btn slider-arrows__btn--green slider-arrows__btn--prev">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-arrow-left">
+                                <use xlink:href="#arrow-left"></use>
+                            </svg>
+                        </button>
+                        <button class="slider-arrows__btn slider-arrows__btn--green slider-arrows__btn--next">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-arrow-right">
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="cases__slider">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" class="cases__slider-card">
+                                    <div class="cases__slider-card-bg">
+                                        <img src="img/cases/1.jpg" alt="" class="cases__slider-card-bg-image">
+                                    </div>
+                                    <h4 class="cases__slider-card-title cases__slider-card-title--white">
+                                        Подборка
+                                        на&nbsp;23&nbsp;февраля
+                                    </h4>
+                                    <div class="btn cases__slider-card-btn">
+                                        Подробнее
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="cases__slider-card">
+                                    <div class="cases__slider-card-bg">
+                                        <img src="img/cases/2.jpg" alt="" class="cases__slider-card-bg-image">
+                                    </div>
+                                    <h4 class="cases__slider-card-title">
+                                        Подборка
+                                        на&nbsp;8&nbsp;марта
+                                    </h4>
+                                    <div class="btn cases__slider-card-btn">
+                                        Подробнее
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="cases__slider-card">
+                                    <div class="cases__slider-card-bg">
+                                        <img src="img/cases/3.jpg" alt="" class="cases__slider-card-bg-image">
+                                    </div>
+                                    <h4 class="cases__slider-card-title cases__slider-card-title--white">
+                                        Подборка
+                                        на&nbsp;Новый год
+                                    </h4>
+                                    <div class="btn cases__slider-card-btn">
+                                        Подробнее
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="cases__slider-card">
+                                    <div class="cases__slider-card-bg">
+                                        <img src="img/cases/4.jpg" alt="" class="cases__slider-card-bg-image">
+                                    </div>
+                                    <h4 class="cases__slider-card-title">
+                                        Подборка
+                                        на&nbsp;14&nbsp;февраля
+                                    </h4>
+                                    <div class="btn cases__slider-card-btn">
+                                        Подробнее
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="cases__slider-card">
+                                    <div class="cases__slider-card-bg">
+                                        <img src="img/cases/1.jpg" alt="" class="cases__slider-card-bg-image">
+                                    </div>
+                                    <h4 class="cases__slider-card-title cases__slider-card-title--white">
+                                        Подборка
+                                        на&nbsp;23&nbsp;февраля
+                                    </h4>
+                                    <div class="btn cases__slider-card-btn">
+                                        Подробнее
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="cases__slider-card">
+                                    <div class="cases__slider-card-bg">
+                                        <img src="img/cases/2.jpg" alt="" class="cases__slider-card-bg-image">
+                                    </div>
+                                    <h4 class="cases__slider-card-title">
+                                        Подборка
+                                        на&nbsp;8&nbsp;марта
+                                    </h4>
+                                    <div class="btn cases__slider-card-btn">
+                                        Подробнее
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="cases__slider-card">
+                                    <div class="cases__slider-card-bg">
+                                        <img src="img/cases/3.jpg" alt="" class="cases__slider-card-bg-image">
+                                    </div>
+                                    <h4 class="cases__slider-card-title cases__slider-card-title--white">
+                                        Подборка
+                                        на&nbsp;Новый год
+                                    </h4>
+                                    <div class="btn cases__slider-card-btn">
+                                        Подробнее
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="cases__slider-card">
+                                    <div class="cases__slider-card-bg">
+                                        <img src="img/cases/4.jpg" alt="" class="cases__slider-card-bg-image">
+                                    </div>
+                                    <h4 class="cases__slider-card-title">
+                                        Подборка
+                                        на&nbsp;14&nbsp;февраля
+                                    </h4>
+                                    <div class="btn cases__slider-card-btn">
+                                        Подробнее
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cases__bottom-text">
+                    <p>
+                        Брело́к — аксессуар, украшение, выполненное в виде подвески на цепочке, браслете, кольце
+                        для ключей и другое. Обычно используется в декоративных и рекламных целях. Брелок
+                        способствует уменьшению вероятности потери ключей, за счёт увеличения размера, массы
+                        связки. Брелок также может выполнять дополнительную полезную функцию, например,
+                        представлять собой мини-фонарик, дистанционный пульт управления для автомобиля,
+                        открывалку для бутылок, пудреницу и так далее. Брелок — типичный сувенир или подарок.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+</section>
+
+
+{{/content}}
+{{/extend}}
