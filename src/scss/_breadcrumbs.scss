@@ -11,7 +11,14 @@
     color: rgba(#0a2742, 0.6);
     display: flex;
     align-items: baseline;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 
+
+    @include breakpoint(mobile) {
+        display: block;
+    }
     svg {
         fill: currentColor;
         margin: 0 .8rem;
@@ -25,7 +32,8 @@
     font-size: 1.4rem;
     line-height: 160%;
     color: rgba(#0a2742, 0.6);
-
+  
+    
     &:link,
     &:visited {
         color: rgba(#0a2742, 0.6);

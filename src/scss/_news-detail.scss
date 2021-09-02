@@ -1,0 +1,20 @@
+.news-detail {
+    margin-bottom: 10rem;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 5rem;
+    }
+}
+
+.news-detail__gallery {
+    margin-bottom: 6.5rem;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 3rem;
+    }
+}
+
+.news-detail__text {
+    font-size: 1.4rem;
+    line-height: 160%;
+}
