@@ -6,13 +6,30 @@
     }
 }
 
-.news-detail__gallery {
-    margin-bottom: 6.5rem;
+.news-detail__row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-gap: 6rem;
+
+    @include breakpointMF(small-tablet) {
+        &--two-col {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+    
+            .news-detail__gallery {
+                order: 3;
+            }
+        }
+    }
+
+    
+
 
     @include breakpoint(mobile) {
-        margin-bottom: 3rem;
+        grid-gap: 3rem;
     }
 }
+
+
 
 .news-detail__text {
     font-size: 1.4rem;
