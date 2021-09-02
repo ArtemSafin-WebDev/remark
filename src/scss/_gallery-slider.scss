@@ -16,6 +16,12 @@
             }
         }
     }
+
+    .gallery-slider--square & {
+        &::before {
+            padding-bottom: 100%;
+        }
+    }
 }
 
 .gallery-slider__main-card-image {
@@ -42,8 +48,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-   
 }
 
 .gallery-slider__thumbs-inner {
@@ -123,6 +127,12 @@
         height: 100%;
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
         transition: opacity 0.2s;
+    }
+
+    .gallery-slider__thumbs--dark & {
+        &::after {
+            background: linear-gradient(0deg, rgba(10, 39, 66, 0.5), rgba(10, 39, 66, 0.5));
+        }
     }
 
     .swiper-slide-thumb-active & {

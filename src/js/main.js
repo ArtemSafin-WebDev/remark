@@ -25,6 +25,7 @@ import productTagsShowMore from './productTagsShowMore';
 import productsSidebar from './productsSidebar';
 import gallerySlider from './gallerySlider';
 import historySlider from './historySlider';
+import alsoRecommended from './alsoRecommended';
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -54,6 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
  
     gallerySlider();
     historySlider();
+    alsoRecommended();
 });
 
 window.addEventListener('load', function() {
