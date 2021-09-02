@@ -52,6 +52,10 @@
                     </span>
                 </button>
         
+                <a href="#callback-modal" class="page-header__callback-btn page-header__callback-btn--menu js-open-modal">
+                    Заказать звонок
+                </a>
+        
                 <form action="/" method="GET" class="page-header__search-form page-header__search-form--mobile">
                     <input type="search" class="page-header__search-form-input" placeholder="Поиск по сайту">
                     <button type="submit" class="page-header__search-form-submit">
@@ -121,7 +125,7 @@
                                 </li>
                             </ul>
                             <a href="tel:88432927383" class="page-header__phone-link">8 (843) 292-73-83</a>
-                            <a href="#" class="page-header__callback-btn">
+                            <a href="#callback-modal" class="page-header__callback-btn js-open-modal">
                                 Заказать звонок
                             </a>
                         </div>
@@ -676,7 +680,7 @@
         
                             </div>
                             <div class="page-footer__col">
-                                <a href="#" class="page-footer__corp-login">
+                                <a href="#login-modal" class="page-footer__corp-login js-open-modal">
                                     Вход для корп. клиентов
                                     <svg width="14" height="14" aria-hidden="true" class="icon-person">
                                         <use xlink:href="#person"></use>
@@ -692,7 +696,7 @@
                                     </a>
                                 </div>
                                 <a href="mailto:sales@rmrk.ru" class="page-footer__email-link">sales@rmrk.ru</a>
-                                <a href="#" class="green-btn page-footer__callback-link">
+                                <a href="#callback-modal" class="green-btn page-footer__callback-link js-open-modal">
                                     Заказать звонок
                                 </a>
         
@@ -749,7 +753,108 @@
                     </div>
                 </div>
             </div>
-        </footer>        <style>
+        </footer>        <div class="modal js-modal" id="callback-modal">
+            <div class="modal__inner">
+                <button class="modal__close js-close-modal">
+                    <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                        <use xlink:href="#cross"></use>
+                    </svg>
+                </button>
+                <h3 class="modal__heading">
+                    Заказать звонок
+                </h3>
+                <form action="/" method="POST" class="modal__form" data-need-validation="">
+                    <div class="modal__form-fields">
+                        <div class="modal__form-field">
+                            <label for="modal-1-name" class="checkout__form-field-label">
+                                Ваше имя
+                                <span class="checkout__form-field-required"></span>
+                            </label>
+                            <input type="text" name="name" class="checkout__form-field-input" required placeholder="Анатолий"
+                                id="modal-1-name">
+                        </div>
+                        <div class="modal__form-field">
+                            <label for="modal-1-phone" class="checkout__form-field-label">
+                                Телефон
+                                <span class="checkout__form-field-required"></span>
+                            </label>
+                            <input type="tel" name="phone" class="checkout__form-field-input js-phone-input" required
+                                data-parsley-phone="" placeholder="+7 ___-___-__-__" id="modal-1-phone">
+                        </div>
+                        <div class="modal__form-field">
+                            <label for="modal-1-comment" class="checkout__form-field-label">
+                                Комментрий
+                            </label>
+                            <textarea name="comment" id="modal-1-comment"
+                                class="checkout__form-field-input checkout__form-field-input--high"
+                                placeholder="Комментарий"></textarea>
+                        </div>
+                        <div class="modal__form-field">
+                            <div class="checkout__form-legend">
+                                <span class="checkout__form-field-required"></span>
+                                — Обязательные поля
+                            </div>
+                        </div>
+                        <div class="modal__form-field">
+                            <button class="green-btn modal__form-submit" type="submit">
+                                Отправить
+                            </button>
+                        </div>
+                        <div class="modal__form-field">
+                            <label class="checkout__form-checkbox">
+                                <input type="checkbox" value="yes" name="policy" class="checkout__form-checkbox-input" required
+                                    checked>
+                                <span class="checkout__form-checkbox-mark">
+        
+                                </span>
+                                <span class="checkout__form-checkbox-text">
+                                    Я согласен на обработку <a href="#">персональных данных</a>.*
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal js-modal" id="login-modal">
+            <div class="modal__inner">
+                <button class="modal__close js-close-modal">
+                    <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                        <use xlink:href="#cross"></use>
+                    </svg>
+                </button>
+                <h3 class="modal__heading">
+                    Вход
+                </h3>
+                <form action="/" method="POST" class="modal__form" data-need-validation="">
+                    <div class="modal__form-fields">
+                        <div class="modal__form-field">
+                            <label for="modal-2-email" class="checkout__form-field-label">
+                                E-mail
+        
+                            </label>
+                            <input type="text" name="email" class="checkout__form-field-input" required
+                                placeholder="info@mail.ru" id="modal-2-email">
+                        </div>
+                        <div class="modal__form-field">
+                            <label for="modal-2-password" class="checkout__form-field-label">
+                                Пароль
+        
+                            </label>
+                            <input type="password" name="password" class="checkout__form-field-input" required
+                                placeholder="Введите пароль" id="modal-2-password">
+                        </div>
+        
+                        <div class="modal__form-field">
+                            <button class="green-btn modal__form-submit" type="submit">
+                                Отправить
+                            </button>
+                        </div>
+        
+                    </div>
+                </form>
+            </div>
+        </div>        <style>
             .ie-placeholder {
                 z-index: 4000;
                 position: fixed;

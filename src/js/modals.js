@@ -21,6 +21,10 @@ export default function modals() {
             const openModalEvent = new CustomEvent('openmodal');
             document.dispatchEvent(openModalEvent);
         };
+
+        if (typeof window.closeMenu === 'function') {
+            window.closeMenu();
+        }
         if (activeModal) {
             closeModal(activeModal);
 

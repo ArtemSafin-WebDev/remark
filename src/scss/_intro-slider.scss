@@ -21,7 +21,13 @@
     .swiper-slide {
         display: flex;
         flex-direction: column;
-        transition: transform 0.5s;
+        
+    }
+
+    .intro-slider:not(.intro-slider--fullwidth) & {
+        .swiper-slide {
+            transition: transform 0.5s;
+        }
     }
 
     .intro-slider:not(.intro-slider--fullwidth).slider-transitioning & {
@@ -53,6 +59,7 @@
     .intro-slider--fullwidth & {
         @include breakpointMF(small-tablet) {
             border-radius: 0;
+            min-height: 47rem;
         }
     }
 

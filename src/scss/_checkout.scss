@@ -93,6 +93,10 @@ textarea.checkout__form-field-input {
     padding-bottom: 1.5rem;
     resize: none;
 
+    &.checkout__form-field-input--high {
+        height: 15rem;
+    }
+
     @include customScrollbar();
 }
 

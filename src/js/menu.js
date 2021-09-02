@@ -21,6 +21,9 @@ export default function menu() {
         menuOpen = false;
     };
 
+    window.closeMenu = closeMenu;
+    window.openMenu = openMenu;
+
     burger.addEventListener('click', event => {
         event.preventDefault();
 
