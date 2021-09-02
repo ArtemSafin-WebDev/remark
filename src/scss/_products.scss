@@ -777,3 +777,103 @@
     transform: translate3d(0, 0, 0);
     will-change: position, transform;
 }
+
+.products__history-accordion {
+    margin-bottom: 1rem;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.products__history-accordion-btn {
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 2.3rem 3rem;
+    background: linear-gradient(112.66deg, #009959 0%, #19a540 100%), linear-gradient(135deg, #f2f7fb 0%, #ffffff 100%);
+    border-radius: 2rem;
+    color: white;
+    cursor: pointer;
+
+    @include breakpoint(mobile) {
+        padding: 1.5rem 2rem;
+        border-radius: 1.5rem;
+    }
+    svg {
+        flex-shrink: 0;
+        width: 1.4rem;
+        height: 0.7rem;
+        fill: currentColor;
+        margin-left: auto;
+        transition: transform 0.3s;
+    }
+
+    .products__history-accordion.active & {
+        svg {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.products__history {
+}
+
+.products__history-accordion-number {
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    font-family: var(--geometria);
+    margin-right: 3.5rem;
+
+    @include breakpoint(mobile) {
+        font-size: 2rem;
+        margin-right: 2.5rem;
+    }
+   
+    span {
+        border-bottom: 1px dashed currentColor;
+    }
+}
+
+.products__history-accordion-date {
+    font-size: 1.4rem;
+    line-height: 1.2;
+    margin-right: 3rem;
+    color: rgba(#ffffff, 0.5);
+}
+
+.products__history-accordion-content {
+    height: 0;
+    overflow: hidden;
+}
+
+.products__history-accordion-content-inner {
+    padding-top: 1.5rem;
+
+    @include breakpoint(mobile) {
+        padding-top: 1rem;
+    }
+}
+
+.products__history-title {
+    padding-bottom: 1.5rem;
+    display: grid;
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+    grid-template-columns: minmax(0, 5.6rem) minmax(0, 1fr) minmax(0, 29rem);
+    font-size: 1.4rem;
+    line-height: 1.2;
+    color: rgba(#0A2742, 0.5);
+
+    @include breakpoint(mobile) {
+        display: none;
+    }
+}
+
+
+.products__history-list-item {
+    margin-bottom: 0.5rem;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

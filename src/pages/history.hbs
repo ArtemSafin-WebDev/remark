@@ -1,0 +1,145 @@
+{{#extend "layout"}}
+{{#content "main"}}
+
+
+<div class="breadcrumbs">
+    <div class="container">
+        <div class="inner-container">
+            <div class="breadcrumbs__links">
+                <a href="#" class="breadcrumbs__link">
+                    Главная
+                </a>
+                <svg width="14" height="14" aria-hidden="true" class="icon-breadcrumbs-arrow">
+                    <use xlink:href="#breadcrumbs-arrow"></use>
+                </svg>
+                <a href="#" class="breadcrumbs__link active">
+                    Личный кабинет
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="page-heading">
+    <div class="container">
+        <div class="inner-container">
+            <h1 class="section-heading">
+                История покупок
+            </h1>
+        </div>
+    </div>
+</div>
+
+
+
+<section class="products">
+    <div class="container">
+        <div class="inner-container">
+            <div class="products__layout">
+                <div class="products__sidebar">
+                    <div class="products__categories-block products__categories-block--nav">
+                        <ul class="products__categories-list">
+                            <li class="products__categories-list-item">
+                                <a href="#" class="products__categories-link active">
+                                    История покупок
+                                </a>
+                            </li>
+                            <li class="products__categories-list-item">
+                                <a href="#" class="products__categories-link ">
+                                    Избранное
+                                </a>
+                            </li>
+                            <li class="products__categories-list-item">
+                                <a href="#" class="products__categories-link">
+                                    Выход
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="products__main">
+                    <div class="products__history">
+                        {{#times 7}}
+                        <div class="products__history-accordion js-accordion" data-close-other="">
+                            <div class="products__history-accordion-btn js-accordion-btn">
+                                <div class="products__history-accordion-number">
+                                    <span>
+                                        Заказ #342
+                                    </span>
+
+                                </div>
+                                <div class="products__history-accordion-date">
+                                    24.07.2021
+                                </div>
+                                <svg width="14" height="14" aria-hidden="true" class="icon-arrow-down">
+                                    <use xlink:href="#arrow-down"></use>
+                                </svg>
+                            </div>
+                            <div class="products__history-accordion-content js-accordion-content">
+                                <div class="products__history-accordion-content-inner">
+                                    <div class="products__history-title">
+                                        <span>
+                                            Фото
+                                        </span>
+                                        <span>
+                                            Название
+                                        </span>
+                                        <span>
+                                            Цена
+                                        </span>
+                                    </div>
+                                    <ul class="products__history-list">
+                                        {{#times 4}}
+                                        <li class="products__history-list-item">
+                                            {{> long-product-card }}
+                                        </li>
+                                        {{/times}}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        {{/times}}
+                    </div>
+                    <div class="pagination">
+                        <div class="pagination__links">
+                            <a href="#" class="pagination__link">
+                                &lt;
+                            </a>
+                            <a href="#" class="pagination__link active">
+                                1
+                            </a>
+                            <a href="#" class="pagination__link">
+                                2
+                            </a>
+                            <a href="#" class="pagination__link">
+                                3
+                            </a>
+                            <a href="#" class="pagination__link">
+                                4
+                            </a>
+                            <a href="#" class="pagination__link">
+                                _
+                            </a>
+                            <a href="#" class="pagination__link">
+                                8
+                            </a>
+                            <a href="#" class="pagination__link">
+                                &gt;
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+{{/content}}
+{{/extend}}

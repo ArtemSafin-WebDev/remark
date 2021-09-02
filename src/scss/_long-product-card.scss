@@ -1,0 +1,205 @@
+.long-product-card {
+    padding: 1rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 2rem;
+    position: relative;
+    z-index: 1;
+
+    @include breakpoint(mobile) {
+        border-radius: 1.5rem;
+        display: grid;
+        grid-template-columns: minmax(0, 6rem) minmax(0, 1fr) minmax(auto, 1fr);
+        grid-gap: 2rem;
+        grid-template-areas: 'image content content' 'price price buttons';
+        grid-column-gap: 1.5rem;
+    }
+}
+
+.long-product-card__link-backplate {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.long-product-card__image-container {
+    width: 6rem;
+    height: 6rem;
+    flex-shrink: 0;
+    margin-right: 0.8rem;
+    position: relative;
+    pointer-events: none;
+
+    @include breakpoint(mobile) {
+        grid-area: image;
+        margin: 0;
+    }
+}
+
+.long-product-card__image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.long-product-card__content {
+    width: 50%;
+    flex-grow: 1;
+    pointer-events: none;
+
+    @include breakpoint(mobile) {
+        grid-area: content;
+        width: 100%;
+        flex-grow: 0;
+    }
+}
+
+.long-product-card__title {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 160%;
+    margin-bottom: 0.4rem;
+    text-decoration-line: underline;
+
+    color: #006ef0;
+}
+
+.long-product-card__text {
+    font-size: 1.2rem;
+    color: rgba(#0a2742, 0.5);
+    line-height: 120%;
+}
+
+.long-product-card__price {
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 130%;
+    font-family: var(--geometria);
+    margin-right: 5.5rem;
+    margin-left: 2rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+    pointer-events: none;
+
+    @include breakpoint(mobile) {
+        margin: 0;
+        grid-area: price;
+    }
+}
+
+.long-product-card__add-to-cart {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+
+    @include breakpoint(mobile) {
+        grid-area: buttons;
+    }
+}
+
+.long-product-card__add-to-cart-submit {
+    width: 4.4rem;
+    height: 4.4rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background-color: var(--primary-color);
+    transition: background-color 0.2s;
+    pointer-events: initial;
+    margin-left: 0.5rem;
+    
+    @include breakpoint(mobile) {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    svg {
+        width: 2rem;
+        height: 2rem;
+        fill: white;
+        display: block;
+        transition: fill 0.2s;
+
+        @include breakpoint(mobile) {
+            width: 1.6rem;
+            height: 1.6rem;
+        }
+    }
+
+    .no-touch &:hover,
+    .touch &:active {
+        background-color: var(--primary-color-hover);
+    }
+}
+
+.long-product-card__amount {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 1.2rem;
+    background: #f2f7fb;
+    border-radius: 4rem;
+    margin-top: auto;
+    width: 11.8rem;
+    @include breakpoint(mobile) {
+        padding: 0.8rem 1.6rem;
+        border-radius: 2rem;
+    }
+}
+.long-product-card__amount-btn {
+    width: 1.6rem;
+    height: 1.6rem;
+    flex-shrink: 0;
+    transition: opacity 0.2s;
+
+    @include breakpoint(mobile) {
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+    svg {
+        display: block;
+        width: 100%;
+        height: 100%;
+        fill: var(--text-color);
+        transition: fill 0.2s;
+    }
+
+    &[disabled] {
+        cursor: default;
+        opacity: 0.5;
+    }
+
+    .no-touch &:not([disabled]):hover,
+    .touch &:not([disabled]):active {
+        svg {
+            fill: var(--primary-color);
+        }
+    }
+}
+
+.long-product-card__amount-input {
+    width: 30%;
+    flex-grow: 1;
+    padding: 0 1rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 130%;
+    font-family: var(--geometria);
+    user-select: none;
+    cursor: default;
+
+    @include breakpoint(mobile) {
+        font-size: 1.6rem;
+    }
+}
