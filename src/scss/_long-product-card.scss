@@ -154,6 +154,7 @@
     @include breakpoint(mobile) {
         padding: 0.8rem 1.6rem;
         border-radius: 2rem;
+        width: 10rem;
     }
 }
 .long-product-card__amount-btn {

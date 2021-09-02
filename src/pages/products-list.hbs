@@ -330,12 +330,12 @@
                                 </div>
                             </div>
                             <div class="products__filters-modes">
-                                <a href="products.html" class="products__filters-modes-link active">
+                                <a href="products.html" class="products__filters-modes-link">
                                     <svg width="14" height="14" aria-hidden="true" class="icon-grid-view">
                                         <use xlink:href="#grid-view"></use>
                                     </svg>
                                 </a>
-                                <a href="products-list.html" class="products__filters-modes-link ">
+                                <a href="products-list.html" class="products__filters-modes-link active">
                                     <svg width="14" height="14" aria-hidden="true" class="icon-list-view">
                                         <use xlink:href="#list-view"></use>
                                     </svg>
@@ -369,10 +369,10 @@
                             </button>
                         </div>
                     </form>
-                    <ul class="products__catalog-list">
+                    <ul class="products__catalog-list products__catalog-list--list-view">
                         {{#times 16}}
                         <li class="products__catalog-list-item">
-                            {{> product-card }}
+                            {{> long-product-card }}
                         </li>
                         {{/times}}
                     </ul>

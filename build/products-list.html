@@ -526,12 +526,12 @@
                                 </div>
                             </div>
                             <div class="products__filters-modes">
-                                <a href="products.html" class="products__filters-modes-link active">
+                                <a href="products.html" class="products__filters-modes-link">
                                     <svg width="14" height="14" aria-hidden="true" class="icon-grid-view">
                                         <use xlink:href="#grid-view"></use>
                                     </svg>
                                 </a>
-                                <a href="products-list.html" class="products__filters-modes-link ">
+                                <a href="products-list.html" class="products__filters-modes-link active">
                                     <svg width="14" height="14" aria-hidden="true" class="icon-list-view">
                                         <use xlink:href="#list-view"></use>
                                     </svg>
@@ -565,1078 +565,726 @@
                             </button>
                         </div>
                     </form>
-                    <ul class="products__catalog-list">
+                    <ul class="products__catalog-list products__catalog-list--list-view">
                         <li class="products__catalog-list-item">
-                            <div class="product-catalog-card">
-                                <div class="product-catalog-card__inner">
-                                    <div class="product-catalog-card__face product-catalog-card__face--front">
-                                        <a href="product.html" class="product-catalog-card__link-backdrop">
+                            <div class="long-product-card">
+                                <a href="product.html" class="long-product-card__link-backplate">
                             
-                                        </a>
-                                        <a href="#" class="product-catalog-card__like-btn">
-                                            <svg width="14" height="14" aria-hidden="true" class="icon-heart">
-                                                <use xlink:href="#heart"></use>
-                                            </svg>
-                                        </a>
-                                        <div class="product-catalog-card__image-container">
-                                            <img data-src="img/product-card.jpg" alt="" class="product-catalog-card__image lazyload">
-                            
-                            
-                                        </div>
-                                        <h4 class="product-catalog-card__title">
-                                            Брелок с эспандером "WORKOUT", синий, 7х..
-                                        </h4>
-                                        <div class="product-catalog-card__text">
-                                            Артикул ХЭ8772/24
-                                        </div>
-                                        <div class="product-catalog-card__bottom-row">
-                                            <div class="product-catalog-card__price">
-                                                229,00 ₽
-                                            </div>
-                                            <a href="#" class="product-catalog-card__add-to-cart">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-cart">
-                                                    <use xlink:href="#cart"></use>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="product-catalog-card__face product-catalog-card__face--back">
-                                        <a href="product.html" class="product-catalog-card__link-backdrop">
-                            
-                                        </a>
-                                        <h4 class="product-catalog-card__title">
-                                            Брелок с эспандером "WORKOUT", синий, 7х..
-                                        </h4>
-                                        <div class="product-catalog-card__text">
-                                            Артикул ХЭ8772/24
-                                        </div>
-                                        <div class="product-catalog-card__price">
-                                            229,00 ₽
-                                        </div>
-                                        <div class="product-catalog-card__amount">
-                                            <button type="button" class="product-catalog-card__amount-btn js-amount-minus"
-                                                disabled="">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-minus">
-                                                    <use xlink:href="#minus"></use>
-                                                </svg>
-                                            </button>
-                                            <input type="text" class="product-catalog-card__amount-input js-amount-input" readonly="" value="0">
-                                            <button type="button" class="product-catalog-card__amount-btn js-amount-plus">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-plus">
-                                                    <use xlink:href="#plus"></use>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                            
-                            
-                            
+                                </a>
+                                <div class="long-product-card__image-container">
+                                    <img data-src="img/product-card.jpg" alt="" class="long-product-card__image lazyload">
                                 </div>
+                                <div class="long-product-card__content">
+                                    <h4 class="long-product-card__title">
+                            
+                                        Брелок со спиннером "MARINE", 5х1,5 см,металл
+                            
+                            
+                                    </h4>
+                                    <div class="long-product-card__text">
+                                        Артикул ХЭ8772/24
+                                    </div>
+                                </div>
+                                <div class="long-product-card__price">
+                                    229,00 ₽
+                                </div>
+                                <form action="/" method="POST" class="long-product-card__add-to-cart">
+                            
+                                    <div class="long-product-card__amount">
+                                        <button type="button" class="long-product-card__amount-btn js-amount-minus" disabled="">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-minus">
+                                                <use xlink:href="#minus"></use>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="long-product-card__amount-input js-amount-input" readonly="" value="1" data-min-value="1">
+                                        <button type="button" class="long-product-card__amount-btn js-amount-plus">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <button class="long-product-card__add-to-cart-submit " type="submit">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-cart">
+                                            <use xlink:href="#cart"></use>
+                                        </svg>
+                                    </button>
+                                </form>
+                            
                             </div>                        </li>
                         <li class="products__catalog-list-item">
-                            <div class="product-catalog-card">
-                                <div class="product-catalog-card__inner">
-                                    <div class="product-catalog-card__face product-catalog-card__face--front">
-                                        <a href="product.html" class="product-catalog-card__link-backdrop">
+                            <div class="long-product-card">
+                                <a href="product.html" class="long-product-card__link-backplate">
                             
-                                        </a>
-                                        <a href="#" class="product-catalog-card__like-btn">
-                                            <svg width="14" height="14" aria-hidden="true" class="icon-heart">
-                                                <use xlink:href="#heart"></use>
-                                            </svg>
-                                        </a>
-                                        <div class="product-catalog-card__image-container">
-                                            <img data-src="img/product-card.jpg" alt="" class="product-catalog-card__image lazyload">
-                            
-                            
-                                        </div>
-                                        <h4 class="product-catalog-card__title">
-                                            Брелок с эспандером "WORKOUT", синий, 7х..
-                                        </h4>
-                                        <div class="product-catalog-card__text">
-                                            Артикул ХЭ8772/24
-                                        </div>
-                                        <div class="product-catalog-card__bottom-row">
-                                            <div class="product-catalog-card__price">
-                                                229,00 ₽
-                                            </div>
-                                            <a href="#" class="product-catalog-card__add-to-cart">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-cart">
-                                                    <use xlink:href="#cart"></use>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="product-catalog-card__face product-catalog-card__face--back">
-                                        <a href="product.html" class="product-catalog-card__link-backdrop">
-                            
-                                        </a>
-                                        <h4 class="product-catalog-card__title">
-                                            Брелок с эспандером "WORKOUT", синий, 7х..
-                                        </h4>
-                                        <div class="product-catalog-card__text">
-                                            Артикул ХЭ8772/24
-                                        </div>
-                                        <div class="product-catalog-card__price">
-                                            229,00 ₽
-                                        </div>
-                                        <div class="product-catalog-card__amount">
-                                            <button type="button" class="product-catalog-card__amount-btn js-amount-minus"
-                                                disabled="">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-minus">
-                                                    <use xlink:href="#minus"></use>
-                                                </svg>
-                                            </button>
-                                            <input type="text" class="product-catalog-card__amount-input js-amount-input" readonly="" value="0">
-                                            <button type="button" class="product-catalog-card__amount-btn js-amount-plus">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-plus">
-                                                    <use xlink:href="#plus"></use>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                            
-                            
-                            
+                                </a>
+                                <div class="long-product-card__image-container">
+                                    <img data-src="img/product-card.jpg" alt="" class="long-product-card__image lazyload">
                                 </div>
+                                <div class="long-product-card__content">
+                                    <h4 class="long-product-card__title">
+                            
+                                        Брелок со спиннером "MARINE", 5х1,5 см,металл
+                            
+                            
+                                    </h4>
+                                    <div class="long-product-card__text">
+                                        Артикул ХЭ8772/24
+                                    </div>
+                                </div>
+                                <div class="long-product-card__price">
+                                    229,00 ₽
+                                </div>
+                                <form action="/" method="POST" class="long-product-card__add-to-cart">
+                            
+                                    <div class="long-product-card__amount">
+                                        <button type="button" class="long-product-card__amount-btn js-amount-minus" disabled="">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-minus">
+                                                <use xlink:href="#minus"></use>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="long-product-card__amount-input js-amount-input" readonly="" value="1" data-min-value="1">
+                                        <button type="button" class="long-product-card__amount-btn js-amount-plus">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <button class="long-product-card__add-to-cart-submit " type="submit">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-cart">
+                                            <use xlink:href="#cart"></use>
+                                        </svg>
+                                    </button>
+                                </form>
+                            
                             </div>                        </li>
                         <li class="products__catalog-list-item">
-                            <div class="product-catalog-card">
-                                <div class="product-catalog-card__inner">
-                                    <div class="product-catalog-card__face product-catalog-card__face--front">
-                                        <a href="product.html" class="product-catalog-card__link-backdrop">
+                            <div class="long-product-card">
+                                <a href="product.html" class="long-product-card__link-backplate">
                             
-                                        </a>
-                                        <a href="#" class="product-catalog-card__like-btn">
-                                            <svg width="14" height="14" aria-hidden="true" class="icon-heart">
-                                                <use xlink:href="#heart"></use>
-                                            </svg>
-                                        </a>
-                                        <div class="product-catalog-card__image-container">
-                                            <img data-src="img/product-card.jpg" alt="" class="product-catalog-card__image lazyload">
-                            
-                            
-                                        </div>
-                                        <h4 class="product-catalog-card__title">
-                                            Брелок с эспандером "WORKOUT", синий, 7х..
-                                        </h4>
-                                        <div class="product-catalog-card__text">
-                                            Артикул ХЭ8772/24
-                                        </div>
-                                        <div class="product-catalog-card__bottom-row">
-                                            <div class="product-catalog-card__price">
-                                                229,00 ₽
-                                            </div>
-                                            <a href="#" class="product-catalog-card__add-to-cart">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-cart">
-                                                    <use xlink:href="#cart"></use>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="product-catalog-card__face product-catalog-card__face--back">
-                                        <a href="product.html" class="product-catalog-card__link-backdrop">
-                            
-                                        </a>
-                                        <h4 class="product-catalog-card__title">
-                                            Брелок с эспандером "WORKOUT", синий, 7х..
-                                        </h4>
-                                        <div class="product-catalog-card__text">
-                                            Артикул ХЭ8772/24
-                                        </div>
-                                        <div class="product-catalog-card__price">
-                                            229,00 ₽
-                                        </div>
-                                        <div class="product-catalog-card__amount">
-                                            <button type="button" class="product-catalog-card__amount-btn js-amount-minus"
-                                                disabled="">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-minus">
-                                                    <use xlink:href="#minus"></use>
-                                                </svg>
-                                            </button>
-                                            <input type="text" class="product-catalog-card__amount-input js-amount-input" readonly="" value="0">
-                                            <button type="button" class="product-catalog-card__amount-btn js-amount-plus">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-plus">
-                                                    <use xlink:href="#plus"></use>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                            
-                            
-                            
+                                </a>
+                                <div class="long-product-card__image-container">
+                                    <img data-src="img/product-card.jpg" alt="" class="long-product-card__image lazyload">
                                 </div>
+                                <div class="long-product-card__content">
+                                    <h4 class="long-product-card__title">
+                            
+                                        Брелок со спиннером "MARINE", 5х1,5 см,металл
+                            
+                            
+                                    </h4>
+                                    <div class="long-product-card__text">
+                                        Артикул ХЭ8772/24
+                                    </div>
+                                </div>
+                                <div class="long-product-card__price">
+                                    229,00 ₽
+                                </div>
+                                <form action="/" method="POST" class="long-product-card__add-to-cart">
+                            
+                                    <div class="long-product-card__amount">
+                                        <button type="button" class="long-product-card__amount-btn js-amount-minus" disabled="">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-minus">
+                                                <use xlink:href="#minus"></use>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="long-product-card__amount-input js-amount-input" readonly="" value="1" data-min-value="1">
+                                        <button type="button" class="long-product-card__amount-btn js-amount-plus">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <button class="long-product-card__add-to-cart-submit " type="submit">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-cart">
+                                            <use xlink:href="#cart"></use>
+                                        </svg>
+                                    </button>
+                                </form>
+                            
                             </div>                        </li>
                         <li class="products__catalog-list-item">
-                            <div class="product-catalog-card">
-                                <div class="product-catalog-card__inner">
-                                    <div class="product-catalog-card__face product-catalog-card__face--front">
-                                        <a href="product.html" class="product-catalog-card__link-backdrop">
+                            <div class="long-product-card">
+                                <a href="product.html" class="long-product-card__link-backplate">
                             
-                                        </a>
-                                        <a href="#" class="product-catalog-card__like-btn">
-                                            <svg width="14" height="14" aria-hidden="true" class="icon-heart">
-                                                <use xlink:href="#heart"></use>
-                                            </svg>
-                                        </a>
-                                        <div class="product-catalog-card__image-container">
-                                            <img data-src="img/product-card.jpg" alt="" class="product-catalog-card__image lazyload">
-                            
-                            
-                                        </div>
-                                        <h4 class="product-catalog-card__title">
-                                            Брелок с эспандером "WORKOUT", синий, 7х..
-                                        </h4>
-                                        <div class="product-catalog-card__text">
-                                            Артикул ХЭ8772/24
-                                        </div>
-                                        <div class="product-catalog-card__bottom-row">
-                                            <div class="product-catalog-card__price">
-                                                229,00 ₽
-                                            </div>
-                                            <a href="#" class="product-catalog-card__add-to-cart">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-cart">
-                                                    <use xlink:href="#cart"></use>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="product-catalog-card__face product-catalog-card__face--back">
-                                        <a href="product.html" class="product-catalog-card__link-backdrop">
-                            
-                                        </a>
-                                        <h4 class="product-catalog-card__title">
-                                            Брелок с эспандером "WORKOUT", синий, 7х..
-                                        </h4>
-                                        <div class="product-catalog-card__text">
-                                            Артикул ХЭ8772/24
-                                        </div>
-                                        <div class="product-catalog-card__price">
-                                            229,00 ₽
-                                        </div>
-                                        <div class="product-catalog-card__amount">
-                                            <button type="button" class="product-catalog-card__amount-btn js-amount-minus"
-                                                disabled="">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-minus">
-                                                    <use xlink:href="#minus"></use>
-                                                </svg>
-                                            </button>
-                                            <input type="text" class="product-catalog-card__amount-input js-amount-input" readonly="" value="0">
-                                            <button type="button" class="product-catalog-card__amount-btn js-amount-plus">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-plus">
-                                                    <use xlink:href="#plus"></use>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                            
-                            
-                            
+                                </a>
+                                <div class="long-product-card__image-container">
+                                    <img data-src="img/product-card.jpg" alt="" class="long-product-card__image lazyload">
                                 </div>
+                                <div class="long-product-card__content">
+                                    <h4 class="long-product-card__title">
+                            
+                                        Брелок со спиннером "MARINE", 5х1,5 см,металл
+                            
+                            
+                                    </h4>
+                                    <div class="long-product-card__text">
+                                        Артикул ХЭ8772/24
+                                    </div>
+                                </div>
+                                <div class="long-product-card__price">
+                                    229,00 ₽
+                                </div>
+                                <form action="/" method="POST" class="long-product-card__add-to-cart">
+                            
+                                    <div class="long-product-card__amount">
+                                        <button type="button" class="long-product-card__amount-btn js-amount-minus" disabled="">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-minus">
+                                                <use xlink:href="#minus"></use>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="long-product-card__amount-input js-amount-input" readonly="" value="1" data-min-value="1">
+                                        <button type="button" class="long-product-card__amount-btn js-amount-plus">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <button class="long-product-card__add-to-cart-submit " type="submit">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-cart">
+                                            <use xlink:href="#cart"></use>
+                                        </svg>
+                                    </button>
+                                </form>
+                            
                             </div>                        </li>
                         <li class="products__catalog-list-item">
-                            <div class="product-catalog-card">
-                                <div class="product-catalog-card__inner">
-                                    <div class="product-catalog-card__face product-catalog-card__face--front">
-                                        <a href="product.html" class="product-catalog-card__link-backdrop">
+                            <div class="long-product-card">
+                                <a href="product.html" class="long-product-card__link-backplate">
                             
-                                        </a>
-                                        <a href="#" class="product-catalog-card__like-btn">
-                                            <svg width="14" height="14" aria-hidden="true" class="icon-heart">
-                                                <use xlink:href="#heart"></use>
-                                            </svg>
-                                        </a>
-                                        <div class="product-catalog-card__image-container">
-                                            <img data-src="img/product-card.jpg" alt="" class="product-catalog-card__image lazyload">
-                            
-                            
-                                        </div>
-                                        <h4 class="product-catalog-card__title">
-                                            Брелок с эспандером "WORKOUT", синий, 7х..
-                                        </h4>
-                                        <div class="product-catalog-card__text">
-                                            Артикул ХЭ8772/24
-                                        </div>
-                                        <div class="product-catalog-card__bottom-row">
-                                            <div class="product-catalog-card__price">
-                                                229,00 ₽
-                                            </div>
-                                            <a href="#" class="product-catalog-card__add-to-cart">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-cart">
-                                                    <use xlink:href="#cart"></use>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="product-catalog-card__face product-catalog-card__face--back">
-                                        <a href="product.html" class="product-catalog-card__link-backdrop">
-                            
-                                        </a>
-                                        <h4 class="product-catalog-card__title">
-                                            Брелок с эспандером "WORKOUT", синий, 7х..
-                                        </h4>
-                                        <div class="product-catalog-card__text">
-                                            Артикул ХЭ8772/24
-                                        </div>
-                                        <div class="product-catalog-card__price">
-                                            229,00 ₽
-                                        </div>
-                                        <div class="product-catalog-card__amount">
-                                            <button type="button" class="product-catalog-card__amount-btn js-amount-minus"
-                                                disabled="">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-minus">
-                                                    <use xlink:href="#minus"></use>
-                                                </svg>
-                                            </button>
-                                            <input type="text" class="product-catalog-card__amount-input js-amount-input" readonly="" value="0">
-                                            <button type="button" class="product-catalog-card__amount-btn js-amount-plus">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-plus">
-                                                    <use xlink:href="#plus"></use>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                            
-                            
-                            
+                                </a>
+                                <div class="long-product-card__image-container">
+                                    <img data-src="img/product-card.jpg" alt="" class="long-product-card__image lazyload">
                                 </div>
+                                <div class="long-product-card__content">
+                                    <h4 class="long-product-card__title">
+                            
+                                        Брелок со спиннером "MARINE", 5х1,5 см,металл
+                            
+                            
+                                    </h4>
+                                    <div class="long-product-card__text">
+                                        Артикул ХЭ8772/24
+                                    </div>
+                                </div>
+                                <div class="long-product-card__price">
+                                    229,00 ₽
+                                </div>
+                                <form action="/" method="POST" class="long-product-card__add-to-cart">
+                            
+                                    <div class="long-product-card__amount">
+                                        <button type="button" class="long-product-card__amount-btn js-amount-minus" disabled="">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-minus">
+                                                <use xlink:href="#minus"></use>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="long-product-card__amount-input js-amount-input" readonly="" value="1" data-min-value="1">
+                                        <button type="button" class="long-product-card__amount-btn js-amount-plus">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <button class="long-product-card__add-to-cart-submit " type="submit">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-cart">
+                                            <use xlink:href="#cart"></use>
+                                        </svg>
+                                    </button>
+                                </form>
+                            
                             </div>                        </li>
                         <li class="products__catalog-list-item">
-                            <div class="product-catalog-card">
-                                <div class="product-catalog-card__inner">
-                                    <div class="product-catalog-card__face product-catalog-card__face--front">
-                                        <a href="product.html" class="product-catalog-card__link-backdrop">
+                            <div class="long-product-card">
+                                <a href="product.html" class="long-product-card__link-backplate">
                             
-                                        </a>
-                                        <a href="#" class="product-catalog-card__like-btn">
-                                            <svg width="14" height="14" aria-hidden="true" class="icon-heart">
-                                                <use xlink:href="#heart"></use>
-                                            </svg>
-                                        </a>
-                                        <div class="product-catalog-card__image-container">
-                                            <img data-src="img/product-card.jpg" alt="" class="product-catalog-card__image lazyload">
-                            
-                            
-                                        </div>
-                                        <h4 class="product-catalog-card__title">
-                                            Брелок с эспандером "WORKOUT", синий, 7х..
-                                        </h4>
-                                        <div class="product-catalog-card__text">
-                                            Артикул ХЭ8772/24
-                                        </div>
-                                        <div class="product-catalog-card__bottom-row">
-                                            <div class="product-catalog-card__price">
-                                                229,00 ₽
-                                            </div>
-                                            <a href="#" class="product-catalog-card__add-to-cart">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-cart">
-                                                    <use xlink:href="#cart"></use>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="product-catalog-card__face product-catalog-card__face--back">
-                                        <a href="product.html" class="product-catalog-card__link-backdrop">
-                            
-                                        </a>
-                                        <h4 class="product-catalog-card__title">
-                                            Брелок с эспандером "WORKOUT", синий, 7х..
-                                        </h4>
-                                        <div class="product-catalog-card__text">
-                                            Артикул ХЭ8772/24
-                                        </div>
-                                        <div class="product-catalog-card__price">
-                                            229,00 ₽
-                                        </div>
-                                        <div class="product-catalog-card__amount">
-                                            <button type="button" class="product-catalog-card__amount-btn js-amount-minus"
-                                                disabled="">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-minus">
-                                                    <use xlink:href="#minus"></use>
-                                                </svg>
-                                            </button>
-                                            <input type="text" class="product-catalog-card__amount-input js-amount-input" readonly="" value="0">
-                                            <button type="button" class="product-catalog-card__amount-btn js-amount-plus">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-plus">
-                                                    <use xlink:href="#plus"></use>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                            
-                            
-                            
+                                </a>
+                                <div class="long-product-card__image-container">
+                                    <img data-src="img/product-card.jpg" alt="" class="long-product-card__image lazyload">
                                 </div>
+                                <div class="long-product-card__content">
+                                    <h4 class="long-product-card__title">
+                            
+                                        Брелок со спиннером "MARINE", 5х1,5 см,металл
+                            
+                            
+                                    </h4>
+                                    <div class="long-product-card__text">
+                                        Артикул ХЭ8772/24
+                                    </div>
+                                </div>
+                                <div class="long-product-card__price">
+                                    229,00 ₽
+                                </div>
+                                <form action="/" method="POST" class="long-product-card__add-to-cart">
+                            
+                                    <div class="long-product-card__amount">
+                                        <button type="button" class="long-product-card__amount-btn js-amount-minus" disabled="">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-minus">
+                                                <use xlink:href="#minus"></use>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="long-product-card__amount-input js-amount-input" readonly="" value="1" data-min-value="1">
+                                        <button type="button" class="long-product-card__amount-btn js-amount-plus">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <button class="long-product-card__add-to-cart-submit " type="submit">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-cart">
+                                            <use xlink:href="#cart"></use>
+                                        </svg>
+                                    </button>
+                                </form>
+                            
                             </div>                        </li>
                         <li class="products__catalog-list-item">
-                            <div class="product-catalog-card">
-                                <div class="product-catalog-card__inner">
-                                    <div class="product-catalog-card__face product-catalog-card__face--front">
-                                        <a href="product.html" class="product-catalog-card__link-backdrop">
+                            <div class="long-product-card">
+                                <a href="product.html" class="long-product-card__link-backplate">
                             
-                                        </a>
-                                        <a href="#" class="product-catalog-card__like-btn">
-                                            <svg width="14" height="14" aria-hidden="true" class="icon-heart">
-                                                <use xlink:href="#heart"></use>
-                                            </svg>
-                                        </a>
-                                        <div class="product-catalog-card__image-container">
-                                            <img data-src="img/product-card.jpg" alt="" class="product-catalog-card__image lazyload">
-                            
-                            
-                                        </div>
-                                        <h4 class="product-catalog-card__title">
-                                            Брелок с эспандером "WORKOUT", синий, 7х..
-                                        </h4>
-                                        <div class="product-catalog-card__text">
-                                            Артикул ХЭ8772/24
-                                        </div>
-                                        <div class="product-catalog-card__bottom-row">
-                                            <div class="product-catalog-card__price">
-                                                229,00 ₽
-                                            </div>
-                                            <a href="#" class="product-catalog-card__add-to-cart">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-cart">
-                                                    <use xlink:href="#cart"></use>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="product-catalog-card__face product-catalog-card__face--back">
-                                        <a href="product.html" class="product-catalog-card__link-backdrop">
-                            
-                                        </a>
-                                        <h4 class="product-catalog-card__title">
-                                            Брелок с эспандером "WORKOUT", синий, 7х..
-                                        </h4>
-                                        <div class="product-catalog-card__text">
-                                            Артикул ХЭ8772/24
-                                        </div>
-                                        <div class="product-catalog-card__price">
-                                            229,00 ₽
-                                        </div>
-                                        <div class="product-catalog-card__amount">
-                                            <button type="button" class="product-catalog-card__amount-btn js-amount-minus"
-                                                disabled="">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-minus">
-                                                    <use xlink:href="#minus"></use>
-                                                </svg>
-                                            </button>
-                                            <input type="text" class="product-catalog-card__amount-input js-amount-input" readonly="" value="0">
-                                            <button type="button" class="product-catalog-card__amount-btn js-amount-plus">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-plus">
-                                                    <use xlink:href="#plus"></use>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                            
-                            
-                            
+                                </a>
+                                <div class="long-product-card__image-container">
+                                    <img data-src="img/product-card.jpg" alt="" class="long-product-card__image lazyload">
                                 </div>
+                                <div class="long-product-card__content">
+                                    <h4 class="long-product-card__title">
+                            
+                                        Брелок со спиннером "MARINE", 5х1,5 см,металл
+                            
+                            
+                                    </h4>
+                                    <div class="long-product-card__text">
+                                        Артикул ХЭ8772/24
+                                    </div>
+                                </div>
+                                <div class="long-product-card__price">
+                                    229,00 ₽
+                                </div>
+                                <form action="/" method="POST" class="long-product-card__add-to-cart">
+                            
+                                    <div class="long-product-card__amount">
+                                        <button type="button" class="long-product-card__amount-btn js-amount-minus" disabled="">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-minus">
+                                                <use xlink:href="#minus"></use>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="long-product-card__amount-input js-amount-input" readonly="" value="1" data-min-value="1">
+                                        <button type="button" class="long-product-card__amount-btn js-amount-plus">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <button class="long-product-card__add-to-cart-submit " type="submit">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-cart">
+                                            <use xlink:href="#cart"></use>
+                                        </svg>
+                                    </button>
+                                </form>
+                            
                             </div>                        </li>
                         <li class="products__catalog-list-item">
-                            <div class="product-catalog-card">
-                                <div class="product-catalog-card__inner">
-                                    <div class="product-catalog-card__face product-catalog-card__face--front">
-                                        <a href="product.html" class="product-catalog-card__link-backdrop">
+                            <div class="long-product-card">
+                                <a href="product.html" class="long-product-card__link-backplate">
                             
-                                        </a>
-                                        <a href="#" class="product-catalog-card__like-btn">
-                                            <svg width="14" height="14" aria-hidden="true" class="icon-heart">
-                                                <use xlink:href="#heart"></use>
-                                            </svg>
-                                        </a>
-                                        <div class="product-catalog-card__image-container">
-                                            <img data-src="img/product-card.jpg" alt="" class="product-catalog-card__image lazyload">
-                            
-                            
-                                        </div>
-                                        <h4 class="product-catalog-card__title">
-                                            Брелок с эспандером "WORKOUT", синий, 7х..
-                                        </h4>
-                                        <div class="product-catalog-card__text">
-                                            Артикул ХЭ8772/24
-                                        </div>
-                                        <div class="product-catalog-card__bottom-row">
-                                            <div class="product-catalog-card__price">
-                                                229,00 ₽
-                                            </div>
-                                            <a href="#" class="product-catalog-card__add-to-cart">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-cart">
-                                                    <use xlink:href="#cart"></use>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="product-catalog-card__face product-catalog-card__face--back">
-                                        <a href="product.html" class="product-catalog-card__link-backdrop">
-                            
-                                        </a>
-                                        <h4 class="product-catalog-card__title">
-                                            Брелок с эспандером "WORKOUT", синий, 7х..
-                                        </h4>
-                                        <div class="product-catalog-card__text">
-                                            Артикул ХЭ8772/24
-                                        </div>
-                                        <div class="product-catalog-card__price">
-                                            229,00 ₽
-                                        </div>
-                                        <div class="product-catalog-card__amount">
-                                            <button type="button" class="product-catalog-card__amount-btn js-amount-minus"
-                                                disabled="">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-minus">
-                                                    <use xlink:href="#minus"></use>
-                                                </svg>
-                                            </button>
-                                            <input type="text" class="product-catalog-card__amount-input js-amount-input" readonly="" value="0">
-                                            <button type="button" class="product-catalog-card__amount-btn js-amount-plus">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-plus">
-                                                    <use xlink:href="#plus"></use>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                            
-                            
-                            
+                                </a>
+                                <div class="long-product-card__image-container">
+                                    <img data-src="img/product-card.jpg" alt="" class="long-product-card__image lazyload">
                                 </div>
+                                <div class="long-product-card__content">
+                                    <h4 class="long-product-card__title">
+                            
+                                        Брелок со спиннером "MARINE", 5х1,5 см,металл
+                            
+                            
+                                    </h4>
+                                    <div class="long-product-card__text">
+                                        Артикул ХЭ8772/24
+                                    </div>
+                                </div>
+                                <div class="long-product-card__price">
+                                    229,00 ₽
+                                </div>
+                                <form action="/" method="POST" class="long-product-card__add-to-cart">
+                            
+                                    <div class="long-product-card__amount">
+                                        <button type="button" class="long-product-card__amount-btn js-amount-minus" disabled="">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-minus">
+                                                <use xlink:href="#minus"></use>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="long-product-card__amount-input js-amount-input" readonly="" value="1" data-min-value="1">
+                                        <button type="button" class="long-product-card__amount-btn js-amount-plus">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <button class="long-product-card__add-to-cart-submit " type="submit">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-cart">
+                                            <use xlink:href="#cart"></use>
+                                        </svg>
+                                    </button>
+                                </form>
+                            
                             </div>                        </li>
                         <li class="products__catalog-list-item">
-                            <div class="product-catalog-card">
-                                <div class="product-catalog-card__inner">
-                                    <div class="product-catalog-card__face product-catalog-card__face--front">
-                                        <a href="product.html" class="product-catalog-card__link-backdrop">
+                            <div class="long-product-card">
+                                <a href="product.html" class="long-product-card__link-backplate">
                             
-                                        </a>
-                                        <a href="#" class="product-catalog-card__like-btn">
-                                            <svg width="14" height="14" aria-hidden="true" class="icon-heart">
-                                                <use xlink:href="#heart"></use>
-                                            </svg>
-                                        </a>
-                                        <div class="product-catalog-card__image-container">
-                                            <img data-src="img/product-card.jpg" alt="" class="product-catalog-card__image lazyload">
-                            
-                            
-                                        </div>
-                                        <h4 class="product-catalog-card__title">
-                                            Брелок с эспандером "WORKOUT", синий, 7х..
-                                        </h4>
-                                        <div class="product-catalog-card__text">
-                                            Артикул ХЭ8772/24
-                                        </div>
-                                        <div class="product-catalog-card__bottom-row">
-                                            <div class="product-catalog-card__price">
-                                                229,00 ₽
-                                            </div>
-                                            <a href="#" class="product-catalog-card__add-to-cart">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-cart">
-                                                    <use xlink:href="#cart"></use>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="product-catalog-card__face product-catalog-card__face--back">
-                                        <a href="product.html" class="product-catalog-card__link-backdrop">
-                            
-                                        </a>
-                                        <h4 class="product-catalog-card__title">
-                                            Брелок с эспандером "WORKOUT", синий, 7х..
-                                        </h4>
-                                        <div class="product-catalog-card__text">
-                                            Артикул ХЭ8772/24
-                                        </div>
-                                        <div class="product-catalog-card__price">
-                                            229,00 ₽
-                                        </div>
-                                        <div class="product-catalog-card__amount">
-                                            <button type="button" class="product-catalog-card__amount-btn js-amount-minus"
-                                                disabled="">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-minus">
-                                                    <use xlink:href="#minus"></use>
-                                                </svg>
-                                            </button>
-                                            <input type="text" class="product-catalog-card__amount-input js-amount-input" readonly="" value="0">
-                                            <button type="button" class="product-catalog-card__amount-btn js-amount-plus">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-plus">
-                                                    <use xlink:href="#plus"></use>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                            
-                            
-                            
+                                </a>
+                                <div class="long-product-card__image-container">
+                                    <img data-src="img/product-card.jpg" alt="" class="long-product-card__image lazyload">
                                 </div>
+                                <div class="long-product-card__content">
+                                    <h4 class="long-product-card__title">
+                            
+                                        Брелок со спиннером "MARINE", 5х1,5 см,металл
+                            
+                            
+                                    </h4>
+                                    <div class="long-product-card__text">
+                                        Артикул ХЭ8772/24
+                                    </div>
+                                </div>
+                                <div class="long-product-card__price">
+                                    229,00 ₽
+                                </div>
+                                <form action="/" method="POST" class="long-product-card__add-to-cart">
+                            
+                                    <div class="long-product-card__amount">
+                                        <button type="button" class="long-product-card__amount-btn js-amount-minus" disabled="">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-minus">
+                                                <use xlink:href="#minus"></use>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="long-product-card__amount-input js-amount-input" readonly="" value="1" data-min-value="1">
+                                        <button type="button" class="long-product-card__amount-btn js-amount-plus">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <button class="long-product-card__add-to-cart-submit " type="submit">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-cart">
+                                            <use xlink:href="#cart"></use>
+                                        </svg>
+                                    </button>
+                                </form>
+                            
                             </div>                        </li>
                         <li class="products__catalog-list-item">
-                            <div class="product-catalog-card">
-                                <div class="product-catalog-card__inner">
-                                    <div class="product-catalog-card__face product-catalog-card__face--front">
-                                        <a href="product.html" class="product-catalog-card__link-backdrop">
+                            <div class="long-product-card">
+                                <a href="product.html" class="long-product-card__link-backplate">
                             
-                                        </a>
-                                        <a href="#" class="product-catalog-card__like-btn">
-                                            <svg width="14" height="14" aria-hidden="true" class="icon-heart">
-                                                <use xlink:href="#heart"></use>
-                                            </svg>
-                                        </a>
-                                        <div class="product-catalog-card__image-container">
-                                            <img data-src="img/product-card.jpg" alt="" class="product-catalog-card__image lazyload">
-                            
-                            
-                                        </div>
-                                        <h4 class="product-catalog-card__title">
-                                            Брелок с эспандером "WORKOUT", синий, 7х..
-                                        </h4>
-                                        <div class="product-catalog-card__text">
-                                            Артикул ХЭ8772/24
-                                        </div>
-                                        <div class="product-catalog-card__bottom-row">
-                                            <div class="product-catalog-card__price">
-                                                229,00 ₽
-                                            </div>
-                                            <a href="#" class="product-catalog-card__add-to-cart">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-cart">
-                                                    <use xlink:href="#cart"></use>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="product-catalog-card__face product-catalog-card__face--back">
-                                        <a href="product.html" class="product-catalog-card__link-backdrop">
-                            
-                                        </a>
-                                        <h4 class="product-catalog-card__title">
-                                            Брелок с эспандером "WORKOUT", синий, 7х..
-                                        </h4>
-                                        <div class="product-catalog-card__text">
-                                            Артикул ХЭ8772/24
-                                        </div>
-                                        <div class="product-catalog-card__price">
-                                            229,00 ₽
-                                        </div>
-                                        <div class="product-catalog-card__amount">
-                                            <button type="button" class="product-catalog-card__amount-btn js-amount-minus"
-                                                disabled="">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-minus">
-                                                    <use xlink:href="#minus"></use>
-                                                </svg>
-                                            </button>
-                                            <input type="text" class="product-catalog-card__amount-input js-amount-input" readonly="" value="0">
-                                            <button type="button" class="product-catalog-card__amount-btn js-amount-plus">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-plus">
-                                                    <use xlink:href="#plus"></use>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                            
-                            
-                            
+                                </a>
+                                <div class="long-product-card__image-container">
+                                    <img data-src="img/product-card.jpg" alt="" class="long-product-card__image lazyload">
                                 </div>
+                                <div class="long-product-card__content">
+                                    <h4 class="long-product-card__title">
+                            
+                                        Брелок со спиннером "MARINE", 5х1,5 см,металл
+                            
+                            
+                                    </h4>
+                                    <div class="long-product-card__text">
+                                        Артикул ХЭ8772/24
+                                    </div>
+                                </div>
+                                <div class="long-product-card__price">
+                                    229,00 ₽
+                                </div>
+                                <form action="/" method="POST" class="long-product-card__add-to-cart">
+                            
+                                    <div class="long-product-card__amount">
+                                        <button type="button" class="long-product-card__amount-btn js-amount-minus" disabled="">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-minus">
+                                                <use xlink:href="#minus"></use>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="long-product-card__amount-input js-amount-input" readonly="" value="1" data-min-value="1">
+                                        <button type="button" class="long-product-card__amount-btn js-amount-plus">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <button class="long-product-card__add-to-cart-submit " type="submit">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-cart">
+                                            <use xlink:href="#cart"></use>
+                                        </svg>
+                                    </button>
+                                </form>
+                            
                             </div>                        </li>
                         <li class="products__catalog-list-item">
-                            <div class="product-catalog-card">
-                                <div class="product-catalog-card__inner">
-                                    <div class="product-catalog-card__face product-catalog-card__face--front">
-                                        <a href="product.html" class="product-catalog-card__link-backdrop">
+                            <div class="long-product-card">
+                                <a href="product.html" class="long-product-card__link-backplate">
                             
-                                        </a>
-                                        <a href="#" class="product-catalog-card__like-btn">
-                                            <svg width="14" height="14" aria-hidden="true" class="icon-heart">
-                                                <use xlink:href="#heart"></use>
-                                            </svg>
-                                        </a>
-                                        <div class="product-catalog-card__image-container">
-                                            <img data-src="img/product-card.jpg" alt="" class="product-catalog-card__image lazyload">
-                            
-                            
-                                        </div>
-                                        <h4 class="product-catalog-card__title">
-                                            Брелок с эспандером "WORKOUT", синий, 7х..
-                                        </h4>
-                                        <div class="product-catalog-card__text">
-                                            Артикул ХЭ8772/24
-                                        </div>
-                                        <div class="product-catalog-card__bottom-row">
-                                            <div class="product-catalog-card__price">
-                                                229,00 ₽
-                                            </div>
-                                            <a href="#" class="product-catalog-card__add-to-cart">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-cart">
-                                                    <use xlink:href="#cart"></use>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="product-catalog-card__face product-catalog-card__face--back">
-                                        <a href="product.html" class="product-catalog-card__link-backdrop">
-                            
-                                        </a>
-                                        <h4 class="product-catalog-card__title">
-                                            Брелок с эспандером "WORKOUT", синий, 7х..
-                                        </h4>
-                                        <div class="product-catalog-card__text">
-                                            Артикул ХЭ8772/24
-                                        </div>
-                                        <div class="product-catalog-card__price">
-                                            229,00 ₽
-                                        </div>
-                                        <div class="product-catalog-card__amount">
-                                            <button type="button" class="product-catalog-card__amount-btn js-amount-minus"
-                                                disabled="">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-minus">
-                                                    <use xlink:href="#minus"></use>
-                                                </svg>
-                                            </button>
-                                            <input type="text" class="product-catalog-card__amount-input js-amount-input" readonly="" value="0">
-                                            <button type="button" class="product-catalog-card__amount-btn js-amount-plus">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-plus">
-                                                    <use xlink:href="#plus"></use>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                            
-                            
-                            
+                                </a>
+                                <div class="long-product-card__image-container">
+                                    <img data-src="img/product-card.jpg" alt="" class="long-product-card__image lazyload">
                                 </div>
+                                <div class="long-product-card__content">
+                                    <h4 class="long-product-card__title">
+                            
+                                        Брелок со спиннером "MARINE", 5х1,5 см,металл
+                            
+                            
+                                    </h4>
+                                    <div class="long-product-card__text">
+                                        Артикул ХЭ8772/24
+                                    </div>
+                                </div>
+                                <div class="long-product-card__price">
+                                    229,00 ₽
+                                </div>
+                                <form action="/" method="POST" class="long-product-card__add-to-cart">
+                            
+                                    <div class="long-product-card__amount">
+                                        <button type="button" class="long-product-card__amount-btn js-amount-minus" disabled="">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-minus">
+                                                <use xlink:href="#minus"></use>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="long-product-card__amount-input js-amount-input" readonly="" value="1" data-min-value="1">
+                                        <button type="button" class="long-product-card__amount-btn js-amount-plus">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <button class="long-product-card__add-to-cart-submit " type="submit">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-cart">
+                                            <use xlink:href="#cart"></use>
+                                        </svg>
+                                    </button>
+                                </form>
+                            
                             </div>                        </li>
                         <li class="products__catalog-list-item">
-                            <div class="product-catalog-card">
-                                <div class="product-catalog-card__inner">
-                                    <div class="product-catalog-card__face product-catalog-card__face--front">
-                                        <a href="product.html" class="product-catalog-card__link-backdrop">
+                            <div class="long-product-card">
+                                <a href="product.html" class="long-product-card__link-backplate">
                             
-                                        </a>
-                                        <a href="#" class="product-catalog-card__like-btn">
-                                            <svg width="14" height="14" aria-hidden="true" class="icon-heart">
-                                                <use xlink:href="#heart"></use>
-                                            </svg>
-                                        </a>
-                                        <div class="product-catalog-card__image-container">
-                                            <img data-src="img/product-card.jpg" alt="" class="product-catalog-card__image lazyload">
-                            
-                            
-                                        </div>
-                                        <h4 class="product-catalog-card__title">
-                                            Брелок с эспандером "WORKOUT", синий, 7х..
-                                        </h4>
-                                        <div class="product-catalog-card__text">
-                                            Артикул ХЭ8772/24
-                                        </div>
-                                        <div class="product-catalog-card__bottom-row">
-                                            <div class="product-catalog-card__price">
-                                                229,00 ₽
-                                            </div>
-                                            <a href="#" class="product-catalog-card__add-to-cart">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-cart">
-                                                    <use xlink:href="#cart"></use>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="product-catalog-card__face product-catalog-card__face--back">
-                                        <a href="product.html" class="product-catalog-card__link-backdrop">
-                            
-                                        </a>
-                                        <h4 class="product-catalog-card__title">
-                                            Брелок с эспандером "WORKOUT", синий, 7х..
-                                        </h4>
-                                        <div class="product-catalog-card__text">
-                                            Артикул ХЭ8772/24
-                                        </div>
-                                        <div class="product-catalog-card__price">
-                                            229,00 ₽
-                                        </div>
-                                        <div class="product-catalog-card__amount">
-                                            <button type="button" class="product-catalog-card__amount-btn js-amount-minus"
-                                                disabled="">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-minus">
-                                                    <use xlink:href="#minus"></use>
-                                                </svg>
-                                            </button>
-                                            <input type="text" class="product-catalog-card__amount-input js-amount-input" readonly="" value="0">
-                                            <button type="button" class="product-catalog-card__amount-btn js-amount-plus">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-plus">
-                                                    <use xlink:href="#plus"></use>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                            
-                            
-                            
+                                </a>
+                                <div class="long-product-card__image-container">
+                                    <img data-src="img/product-card.jpg" alt="" class="long-product-card__image lazyload">
                                 </div>
+                                <div class="long-product-card__content">
+                                    <h4 class="long-product-card__title">
+                            
+                                        Брелок со спиннером "MARINE", 5х1,5 см,металл
+                            
+                            
+                                    </h4>
+                                    <div class="long-product-card__text">
+                                        Артикул ХЭ8772/24
+                                    </div>
+                                </div>
+                                <div class="long-product-card__price">
+                                    229,00 ₽
+                                </div>
+                                <form action="/" method="POST" class="long-product-card__add-to-cart">
+                            
+                                    <div class="long-product-card__amount">
+                                        <button type="button" class="long-product-card__amount-btn js-amount-minus" disabled="">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-minus">
+                                                <use xlink:href="#minus"></use>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="long-product-card__amount-input js-amount-input" readonly="" value="1" data-min-value="1">
+                                        <button type="button" class="long-product-card__amount-btn js-amount-plus">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <button class="long-product-card__add-to-cart-submit " type="submit">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-cart">
+                                            <use xlink:href="#cart"></use>
+                                        </svg>
+                                    </button>
+                                </form>
+                            
                             </div>                        </li>
                         <li class="products__catalog-list-item">
-                            <div class="product-catalog-card">
-                                <div class="product-catalog-card__inner">
-                                    <div class="product-catalog-card__face product-catalog-card__face--front">
-                                        <a href="product.html" class="product-catalog-card__link-backdrop">
+                            <div class="long-product-card">
+                                <a href="product.html" class="long-product-card__link-backplate">
                             
-                                        </a>
-                                        <a href="#" class="product-catalog-card__like-btn">
-                                            <svg width="14" height="14" aria-hidden="true" class="icon-heart">
-                                                <use xlink:href="#heart"></use>
-                                            </svg>
-                                        </a>
-                                        <div class="product-catalog-card__image-container">
-                                            <img data-src="img/product-card.jpg" alt="" class="product-catalog-card__image lazyload">
-                            
-                            
-                                        </div>
-                                        <h4 class="product-catalog-card__title">
-                                            Брелок с эспандером "WORKOUT", синий, 7х..
-                                        </h4>
-                                        <div class="product-catalog-card__text">
-                                            Артикул ХЭ8772/24
-                                        </div>
-                                        <div class="product-catalog-card__bottom-row">
-                                            <div class="product-catalog-card__price">
-                                                229,00 ₽
-                                            </div>
-                                            <a href="#" class="product-catalog-card__add-to-cart">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-cart">
-                                                    <use xlink:href="#cart"></use>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="product-catalog-card__face product-catalog-card__face--back">
-                                        <a href="product.html" class="product-catalog-card__link-backdrop">
-                            
-                                        </a>
-                                        <h4 class="product-catalog-card__title">
-                                            Брелок с эспандером "WORKOUT", синий, 7х..
-                                        </h4>
-                                        <div class="product-catalog-card__text">
-                                            Артикул ХЭ8772/24
-                                        </div>
-                                        <div class="product-catalog-card__price">
-                                            229,00 ₽
-                                        </div>
-                                        <div class="product-catalog-card__amount">
-                                            <button type="button" class="product-catalog-card__amount-btn js-amount-minus"
-                                                disabled="">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-minus">
-                                                    <use xlink:href="#minus"></use>
-                                                </svg>
-                                            </button>
-                                            <input type="text" class="product-catalog-card__amount-input js-amount-input" readonly="" value="0">
-                                            <button type="button" class="product-catalog-card__amount-btn js-amount-plus">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-plus">
-                                                    <use xlink:href="#plus"></use>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                            
-                            
-                            
+                                </a>
+                                <div class="long-product-card__image-container">
+                                    <img data-src="img/product-card.jpg" alt="" class="long-product-card__image lazyload">
                                 </div>
+                                <div class="long-product-card__content">
+                                    <h4 class="long-product-card__title">
+                            
+                                        Брелок со спиннером "MARINE", 5х1,5 см,металл
+                            
+                            
+                                    </h4>
+                                    <div class="long-product-card__text">
+                                        Артикул ХЭ8772/24
+                                    </div>
+                                </div>
+                                <div class="long-product-card__price">
+                                    229,00 ₽
+                                </div>
+                                <form action="/" method="POST" class="long-product-card__add-to-cart">
+                            
+                                    <div class="long-product-card__amount">
+                                        <button type="button" class="long-product-card__amount-btn js-amount-minus" disabled="">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-minus">
+                                                <use xlink:href="#minus"></use>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="long-product-card__amount-input js-amount-input" readonly="" value="1" data-min-value="1">
+                                        <button type="button" class="long-product-card__amount-btn js-amount-plus">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <button class="long-product-card__add-to-cart-submit " type="submit">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-cart">
+                                            <use xlink:href="#cart"></use>
+                                        </svg>
+                                    </button>
+                                </form>
+                            
                             </div>                        </li>
                         <li class="products__catalog-list-item">
-                            <div class="product-catalog-card">
-                                <div class="product-catalog-card__inner">
-                                    <div class="product-catalog-card__face product-catalog-card__face--front">
-                                        <a href="product.html" class="product-catalog-card__link-backdrop">
+                            <div class="long-product-card">
+                                <a href="product.html" class="long-product-card__link-backplate">
                             
-                                        </a>
-                                        <a href="#" class="product-catalog-card__like-btn">
-                                            <svg width="14" height="14" aria-hidden="true" class="icon-heart">
-                                                <use xlink:href="#heart"></use>
-                                            </svg>
-                                        </a>
-                                        <div class="product-catalog-card__image-container">
-                                            <img data-src="img/product-card.jpg" alt="" class="product-catalog-card__image lazyload">
-                            
-                            
-                                        </div>
-                                        <h4 class="product-catalog-card__title">
-                                            Брелок с эспандером "WORKOUT", синий, 7х..
-                                        </h4>
-                                        <div class="product-catalog-card__text">
-                                            Артикул ХЭ8772/24
-                                        </div>
-                                        <div class="product-catalog-card__bottom-row">
-                                            <div class="product-catalog-card__price">
-                                                229,00 ₽
-                                            </div>
-                                            <a href="#" class="product-catalog-card__add-to-cart">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-cart">
-                                                    <use xlink:href="#cart"></use>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="product-catalog-card__face product-catalog-card__face--back">
-                                        <a href="product.html" class="product-catalog-card__link-backdrop">
-                            
-                                        </a>
-                                        <h4 class="product-catalog-card__title">
-                                            Брелок с эспандером "WORKOUT", синий, 7х..
-                                        </h4>
-                                        <div class="product-catalog-card__text">
-                                            Артикул ХЭ8772/24
-                                        </div>
-                                        <div class="product-catalog-card__price">
-                                            229,00 ₽
-                                        </div>
-                                        <div class="product-catalog-card__amount">
-                                            <button type="button" class="product-catalog-card__amount-btn js-amount-minus"
-                                                disabled="">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-minus">
-                                                    <use xlink:href="#minus"></use>
-                                                </svg>
-                                            </button>
-                                            <input type="text" class="product-catalog-card__amount-input js-amount-input" readonly="" value="0">
-                                            <button type="button" class="product-catalog-card__amount-btn js-amount-plus">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-plus">
-                                                    <use xlink:href="#plus"></use>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                            
-                            
-                            
+                                </a>
+                                <div class="long-product-card__image-container">
+                                    <img data-src="img/product-card.jpg" alt="" class="long-product-card__image lazyload">
                                 </div>
+                                <div class="long-product-card__content">
+                                    <h4 class="long-product-card__title">
+                            
+                                        Брелок со спиннером "MARINE", 5х1,5 см,металл
+                            
+                            
+                                    </h4>
+                                    <div class="long-product-card__text">
+                                        Артикул ХЭ8772/24
+                                    </div>
+                                </div>
+                                <div class="long-product-card__price">
+                                    229,00 ₽
+                                </div>
+                                <form action="/" method="POST" class="long-product-card__add-to-cart">
+                            
+                                    <div class="long-product-card__amount">
+                                        <button type="button" class="long-product-card__amount-btn js-amount-minus" disabled="">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-minus">
+                                                <use xlink:href="#minus"></use>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="long-product-card__amount-input js-amount-input" readonly="" value="1" data-min-value="1">
+                                        <button type="button" class="long-product-card__amount-btn js-amount-plus">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <button class="long-product-card__add-to-cart-submit " type="submit">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-cart">
+                                            <use xlink:href="#cart"></use>
+                                        </svg>
+                                    </button>
+                                </form>
+                            
                             </div>                        </li>
                         <li class="products__catalog-list-item">
-                            <div class="product-catalog-card">
-                                <div class="product-catalog-card__inner">
-                                    <div class="product-catalog-card__face product-catalog-card__face--front">
-                                        <a href="product.html" class="product-catalog-card__link-backdrop">
+                            <div class="long-product-card">
+                                <a href="product.html" class="long-product-card__link-backplate">
                             
-                                        </a>
-                                        <a href="#" class="product-catalog-card__like-btn">
-                                            <svg width="14" height="14" aria-hidden="true" class="icon-heart">
-                                                <use xlink:href="#heart"></use>
-                                            </svg>
-                                        </a>
-                                        <div class="product-catalog-card__image-container">
-                                            <img data-src="img/product-card.jpg" alt="" class="product-catalog-card__image lazyload">
-                            
-                            
-                                        </div>
-                                        <h4 class="product-catalog-card__title">
-                                            Брелок с эспандером "WORKOUT", синий, 7х..
-                                        </h4>
-                                        <div class="product-catalog-card__text">
-                                            Артикул ХЭ8772/24
-                                        </div>
-                                        <div class="product-catalog-card__bottom-row">
-                                            <div class="product-catalog-card__price">
-                                                229,00 ₽
-                                            </div>
-                                            <a href="#" class="product-catalog-card__add-to-cart">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-cart">
-                                                    <use xlink:href="#cart"></use>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="product-catalog-card__face product-catalog-card__face--back">
-                                        <a href="product.html" class="product-catalog-card__link-backdrop">
-                            
-                                        </a>
-                                        <h4 class="product-catalog-card__title">
-                                            Брелок с эспандером "WORKOUT", синий, 7х..
-                                        </h4>
-                                        <div class="product-catalog-card__text">
-                                            Артикул ХЭ8772/24
-                                        </div>
-                                        <div class="product-catalog-card__price">
-                                            229,00 ₽
-                                        </div>
-                                        <div class="product-catalog-card__amount">
-                                            <button type="button" class="product-catalog-card__amount-btn js-amount-minus"
-                                                disabled="">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-minus">
-                                                    <use xlink:href="#minus"></use>
-                                                </svg>
-                                            </button>
-                                            <input type="text" class="product-catalog-card__amount-input js-amount-input" readonly="" value="0">
-                                            <button type="button" class="product-catalog-card__amount-btn js-amount-plus">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-plus">
-                                                    <use xlink:href="#plus"></use>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                            
-                            
-                            
+                                </a>
+                                <div class="long-product-card__image-container">
+                                    <img data-src="img/product-card.jpg" alt="" class="long-product-card__image lazyload">
                                 </div>
+                                <div class="long-product-card__content">
+                                    <h4 class="long-product-card__title">
+                            
+                                        Брелок со спиннером "MARINE", 5х1,5 см,металл
+                            
+                            
+                                    </h4>
+                                    <div class="long-product-card__text">
+                                        Артикул ХЭ8772/24
+                                    </div>
+                                </div>
+                                <div class="long-product-card__price">
+                                    229,00 ₽
+                                </div>
+                                <form action="/" method="POST" class="long-product-card__add-to-cart">
+                            
+                                    <div class="long-product-card__amount">
+                                        <button type="button" class="long-product-card__amount-btn js-amount-minus" disabled="">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-minus">
+                                                <use xlink:href="#minus"></use>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="long-product-card__amount-input js-amount-input" readonly="" value="1" data-min-value="1">
+                                        <button type="button" class="long-product-card__amount-btn js-amount-plus">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <button class="long-product-card__add-to-cart-submit " type="submit">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-cart">
+                                            <use xlink:href="#cart"></use>
+                                        </svg>
+                                    </button>
+                                </form>
+                            
                             </div>                        </li>
                         <li class="products__catalog-list-item">
-                            <div class="product-catalog-card">
-                                <div class="product-catalog-card__inner">
-                                    <div class="product-catalog-card__face product-catalog-card__face--front">
-                                        <a href="product.html" class="product-catalog-card__link-backdrop">
+                            <div class="long-product-card">
+                                <a href="product.html" class="long-product-card__link-backplate">
                             
-                                        </a>
-                                        <a href="#" class="product-catalog-card__like-btn">
-                                            <svg width="14" height="14" aria-hidden="true" class="icon-heart">
-                                                <use xlink:href="#heart"></use>
-                                            </svg>
-                                        </a>
-                                        <div class="product-catalog-card__image-container">
-                                            <img data-src="img/product-card.jpg" alt="" class="product-catalog-card__image lazyload">
-                            
-                            
-                                        </div>
-                                        <h4 class="product-catalog-card__title">
-                                            Брелок с эспандером "WORKOUT", синий, 7х..
-                                        </h4>
-                                        <div class="product-catalog-card__text">
-                                            Артикул ХЭ8772/24
-                                        </div>
-                                        <div class="product-catalog-card__bottom-row">
-                                            <div class="product-catalog-card__price">
-                                                229,00 ₽
-                                            </div>
-                                            <a href="#" class="product-catalog-card__add-to-cart">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-cart">
-                                                    <use xlink:href="#cart"></use>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="product-catalog-card__face product-catalog-card__face--back">
-                                        <a href="product.html" class="product-catalog-card__link-backdrop">
-                            
-                                        </a>
-                                        <h4 class="product-catalog-card__title">
-                                            Брелок с эспандером "WORKOUT", синий, 7х..
-                                        </h4>
-                                        <div class="product-catalog-card__text">
-                                            Артикул ХЭ8772/24
-                                        </div>
-                                        <div class="product-catalog-card__price">
-                                            229,00 ₽
-                                        </div>
-                                        <div class="product-catalog-card__amount">
-                                            <button type="button" class="product-catalog-card__amount-btn js-amount-minus"
-                                                disabled="">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-minus">
-                                                    <use xlink:href="#minus"></use>
-                                                </svg>
-                                            </button>
-                                            <input type="text" class="product-catalog-card__amount-input js-amount-input" readonly="" value="0">
-                                            <button type="button" class="product-catalog-card__amount-btn js-amount-plus">
-                                                <svg width="14" height="14" aria-hidden="true" class="icon-plus">
-                                                    <use xlink:href="#plus"></use>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                            
-                            
-                            
+                                </a>
+                                <div class="long-product-card__image-container">
+                                    <img data-src="img/product-card.jpg" alt="" class="long-product-card__image lazyload">
                                 </div>
+                                <div class="long-product-card__content">
+                                    <h4 class="long-product-card__title">
+                            
+                                        Брелок со спиннером "MARINE", 5х1,5 см,металл
+                            
+                            
+                                    </h4>
+                                    <div class="long-product-card__text">
+                                        Артикул ХЭ8772/24
+                                    </div>
+                                </div>
+                                <div class="long-product-card__price">
+                                    229,00 ₽
+                                </div>
+                                <form action="/" method="POST" class="long-product-card__add-to-cart">
+                            
+                                    <div class="long-product-card__amount">
+                                        <button type="button" class="long-product-card__amount-btn js-amount-minus" disabled="">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-minus">
+                                                <use xlink:href="#minus"></use>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="long-product-card__amount-input js-amount-input" readonly="" value="1" data-min-value="1">
+                                        <button type="button" class="long-product-card__amount-btn js-amount-plus">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <button class="long-product-card__add-to-cart-submit " type="submit">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-cart">
+                                            <use xlink:href="#cart"></use>
+                                        </svg>
+                                    </button>
+                                </form>
+                            
                             </div>                        </li>
                     </ul>
 
