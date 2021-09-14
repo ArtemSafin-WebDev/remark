@@ -1,0 +1,40 @@
+.page-inner-nav {
+    margin-bottom: 4rem;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 3rem;
+    }
+}
+
+.page-inner-nav__links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.page-inner-nav__link {
+    padding: 1.6rem 3.2rem;
+    background-color: #fff;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.4rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 2rem;
+    line-height: 130%;
+    font-family: var(--geometria);
+    transition: color .2s, background-color .2s;
+    width: 20rem;
+    &:link,
+    &:visited {
+        color: var(--primary-color);
+    }
+
+    .no-touch &:hover,
+    .touch &:active {
+        background-color: var(--primary-color);
+        color: white;
+    }
+}

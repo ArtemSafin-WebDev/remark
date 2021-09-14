@@ -43,12 +43,15 @@
     }
 }
 
-.reviews__slider-card-video-container {
+.reviews__slider-card-video-container,
+.reviews__slider-card-image-container {
     position: relative;
     border-radius: 2rem;
     overflow: hidden;
     backface-visibility: hidden;
     transform: translateZ(0);
+
+    
     @include breakpoint(mobile) {
         border-radius: 1.5rem;
     }
@@ -87,6 +90,14 @@
     }
 }
 
+.reviews__slider-card-image-container {
+    &::after {
+        display: none;
+    }
+}
+
+
+.reviews__slider-card-image-preview,
 .reviews__slider-card-video-preview {
     position: absolute;
     left: 0;
@@ -135,5 +146,29 @@
         width: 1.7rem;
         height: 1.7rem;
         fill: var(--primary-color);
+    }
+}
+
+.reviews__slider-card-company-logo {
+    width: 37rem;
+    display: block;
+    height: auto;
+    margin-bottom: 3.5rem;
+
+    @include breakpoint(mobile) {
+        width: 20rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.reviews__slider-card-company-name {
+    font-weight: bold;
+    font-size: 2.2rem;
+    line-height: 2.9rem;
+    color: #0a2742;
+
+    @include breakpoint(mobile) {
+        font-size: 1.8rem;
+        line-height: 1.2;
     }
 }

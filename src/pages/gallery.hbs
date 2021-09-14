@@ -1,0 +1,84 @@
+{{#extend "layout"}}
+{{#content "main"}}
+
+
+<div class="breadcrumbs">
+    <div class="container">
+        <div class="inner-container">
+            <div class="breadcrumbs__links">
+                <a href="#" class="breadcrumbs__link">
+                    Главная
+                </a>
+                <svg width="14" height="14" aria-hidden="true" class="icon-breadcrumbs-arrow">
+                    <use xlink:href="#breadcrumbs-arrow"></use>
+                </svg>
+                <a href="#" class="breadcrumbs__link active">
+                    Галерея
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="page-heading">
+    <div class="container">
+        <div class="inner-container">
+            <h1 class="section-heading">
+                Галерея
+            </h1>
+        </div>
+    </div>
+</div>
+
+
+<section class="gallery-catalog">
+    <div class="container">
+        <div class="inner-container">
+            <ul class="gallery-catalog__list">
+                {{#times 8}}
+                <li class="gallery-catalog__list-item">
+                    {{> gallery-card }}
+                </li>
+                {{/times}}
+            </ul>
+            <div class="pagination">
+                <div class="pagination__links">
+                    <a href="#" class="pagination__link">
+                        &lt;
+                    </a>
+                    <a href="#" class="pagination__link active">
+                        1
+                    </a>
+                    <a href="#" class="pagination__link">
+                        2
+                    </a>
+                    <a href="#" class="pagination__link">
+                        3
+                    </a>
+                    <a href="#" class="pagination__link">
+                        4
+                    </a>
+                    <a href="#" class="pagination__link">
+                        _
+                    </a>
+                    <a href="#" class="pagination__link">
+                        8
+                    </a>
+                    <a href="#" class="pagination__link">
+                        &gt;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+{{/content}}
+{{/extend}}
