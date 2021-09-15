@@ -1196,7 +1196,7 @@
                 <div class="inner-container">
         
         
-                    <form action="/" method="POST" class="page-footer__form" data-need-validation="">
+                    <form action="/" method="POST" class="page-footer__form" data-need-validation="" id="footer-form">
                         <h3 class="page-footer__form-heading">
                             Остались вопросы? Мы подскажем!
         
@@ -1710,6 +1710,181 @@
         
                     </div>
                 </form>
+            </div>
+        </div>
+        <div class="modal js-modal" id="print-modal">
+            <div class="modal__inner modal__inner--print">
+                <button class="modal__close js-close-modal">
+                    <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                        <use xlink:href="#cross"></use>
+                    </svg>
+                </button>
+                <h3 class="modal__heading">
+                    УФ-печать
+                </h3>
+                <div class="modal__text">
+                    <p>
+                        Полноцветная печать УФ-отверждаемыми чернилами по различным материалам: пластик, кожа, дерево, металл и
+                        т.п. Это стойкий вид нанесения, который позволяет запечатать практически всю поверхность предмета.
+                    </p>
+                </div>
+                <div class="modal__slider">
+                    <div class="gallery-slider gallery-slider--vertical js-gallery-slider">
+                        <div class="gallery-slider__main">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="gallery-slider__main-card">
+                                            <img data-src="img/gallery-slider-large-image.jpg" alt=""
+                                                class="gallery-slider__main-card-image lazyload">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="gallery-slider__main-card">
+                                            <img data-src="img/gallery-slider-large-image.jpg" alt=""
+                                                class="gallery-slider__main-card-image lazyload">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="gallery-slider__main-card">
+                                            <img data-src="img/gallery-slider-large-image.jpg" alt=""
+                                                class="gallery-slider__main-card-image lazyload">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="gallery-slider__main-card">
+                                            <img data-src="img/gallery-slider-large-image.jpg" alt=""
+                                                class="gallery-slider__main-card-image lazyload">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="gallery-slider__main-card">
+                                            <img data-src="img/gallery-slider-large-image.jpg" alt=""
+                                                class="gallery-slider__main-card-image lazyload">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="gallery-slider__main-card">
+                                            <img data-src="img/gallery-slider-large-image.jpg" alt=""
+                                                class="gallery-slider__main-card-image lazyload">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="gallery-slider__main-card">
+                                            <img data-src="img/gallery-slider-large-image.jpg" alt=""
+                                                class="gallery-slider__main-card-image lazyload">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="gallery-slider__main-card">
+                                            <img data-src="img/gallery-slider-large-image.jpg" alt=""
+                                                class="gallery-slider__main-card-image lazyload">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="gallery-slider__main-card">
+                                            <img data-src="img/gallery-slider-large-image.jpg" alt=""
+                                                class="gallery-slider__main-card-image lazyload">
+                                        </div>
+                                    </div>
+        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-slider__thumbs">
+                            <div class="gallery-slider__thumbs-inner">
+        
+        
+                                <button class="gallery-slider__arrow gallery-slider__arrow--prev">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-arrow-left">
+                                        <use xlink:href="#arrow-left"></use>
+                                    </svg>
+                                </button>
+                                <div class="gallery-slider__thumbs-wrapper">
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="gallery-slider__thumbs-card">
+                                                    <img data-src="img/thumbs.jpg" alt=""
+                                                        class="gallery-slider__thumbs-card-image lazyload">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="gallery-slider__thumbs-card">
+                                                    <img data-src="img/thumbs.jpg" alt=""
+                                                        class="gallery-slider__thumbs-card-image lazyload">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="gallery-slider__thumbs-card">
+                                                    <img data-src="img/thumbs.jpg" alt=""
+                                                        class="gallery-slider__thumbs-card-image lazyload">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="gallery-slider__thumbs-card">
+                                                    <img data-src="img/thumbs.jpg" alt=""
+                                                        class="gallery-slider__thumbs-card-image lazyload">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="gallery-slider__thumbs-card">
+                                                    <img data-src="img/thumbs.jpg" alt=""
+                                                        class="gallery-slider__thumbs-card-image lazyload">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="gallery-slider__thumbs-card">
+                                                    <img data-src="img/thumbs.jpg" alt=""
+                                                        class="gallery-slider__thumbs-card-image lazyload">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="gallery-slider__thumbs-card">
+                                                    <img data-src="img/thumbs.jpg" alt=""
+                                                        class="gallery-slider__thumbs-card-image lazyload">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="gallery-slider__thumbs-card">
+                                                    <img data-src="img/thumbs.jpg" alt=""
+                                                        class="gallery-slider__thumbs-card-image lazyload">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="gallery-slider__thumbs-card">
+                                                    <img data-src="img/thumbs.jpg" alt=""
+                                                        class="gallery-slider__thumbs-card-image lazyload">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="gallery-slider__arrow gallery-slider__arrow--next">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-arrow-right">
+                                        <use xlink:href="#arrow-right"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal js-modal" id="success">
+            <div class="modal__inner modal__inner--success">
+                <button class="modal__close js-close-modal">
+                    <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                        <use xlink:href="#cross"></use>
+                    </svg>
+                </button>
+                <div class="modal__success-text">
+                    <p>
+                        Сообщение успешно отправлено
+                    </p>
+                </div>
+        
+        
             </div>
         </div>        <style>
             .ie-placeholder {
