@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="566638ea-644d-452e-9d25-e135fcd32925" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/build/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/catalog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/contacts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/css/sourcemaps/styles.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/sourcemaps/styles.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/css/styles.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/styles.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/favourites.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/favourites.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/gallery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/history.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/history.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index-fullwidth.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index-fullwidth.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/app.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/news-detail-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/news-detail-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/news-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/news-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/products-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/products-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/services.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/vacancies.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/vacancies.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/historySlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/historySlider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/about.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/about.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/partials/layouts/layout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/layouts/layout.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_about.scss" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1zQCaHopJQIcW016NNr3bNR9rqc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../want-credit" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="566638ea-644d-452e-9d25-e135fcd32925" name="Default Changelist" comment="" />
+      <created>1634070986437</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1634070986437</updated>
+      <workItem from="1634070987548" duration="2864000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1634073737107">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1634073737107" />
+    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1634072443209">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1634072443209" />
+  </component>
+</project>

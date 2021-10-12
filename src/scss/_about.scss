@@ -11,6 +11,8 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-gap: 3rem;
     margin-bottom: 8rem;
+    transition: all .3s ease;
+    opacity: 0;
 
     @include breakpoint(mobile) {
         grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -23,12 +25,12 @@
     display: flex;
     flex-direction: column;
 
-    @include breakpointMF(small-tablet) {
-        &:first-child {
-            align-self: center;
-            padding-right: 5rem;
-        }
-    }
+    //@include breakpointMF(small-tablet) {
+    //    &:first-child {
+    //        align-self: center;
+    //        padding-right: 5rem;
+    //    }
+    //}
 }
 
 .about__text-content {
@@ -282,4 +284,16 @@
 .about__vacancies-card-btn {
     margin-top: auto;
     align-self: flex-start;
+}
+
+.about__content-slider {
+    .swiper-container {
+        overflow: visible;
+    }
+
+    .swiper-slide-visible {
+        .about__row {
+            opacity: 1;
+        }
+    }
 }
