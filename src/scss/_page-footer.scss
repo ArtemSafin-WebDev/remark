@@ -371,7 +371,6 @@
         font-size: 2rem;
         line-height: 1.2;
         margin-bottom: 3.5rem;
-        
     }
 
     .no-touch &:hover,
@@ -382,6 +381,11 @@
 
 .page-footer__callback-link {
     width: 100%;
+    margin-bottom: 5rem;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 3rem;
+    }
 }
 
 .page-footer__bottom-info {
@@ -473,4 +477,26 @@
             fill: white;
         }
     }
+}
+
+.page-footer__made-by {
+    display: inline-flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: var(--primary-color);
+    &:link,
+    &:visited {
+        color: var(--primary-color);
+    }
+}
+
+
+.page-footer__made-by-logo {
+    width: 13.8rem;
+    height: auto;
+    flex-shrink: 0;
+    margin-left: 0.6rem;
+    position: relative;
 }
